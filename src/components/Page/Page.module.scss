@@ -1,0 +1,18 @@
+@import '../../styles/_colours';
+
+.page {
+  height: 100%;
+  background-color: $dark;
+  color: $light;
+  display: flex;
+  &__footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    line-height: 3rem;
+    padding-left: 1rem;
+  }
+  h3 {
+    font-weight: 300;
+  }
+}

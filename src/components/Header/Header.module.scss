@@ -1,0 +1,23 @@
+@import '../../styles/__colours';
+@import '../../styles/__breakpoints';
+
+.header{
+    // background-color: darken($color: $primary-highlight, $amount: 10%);
+    width: 100%; //temp.
+    
+    background-color: $secondary;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+    &__content{
+        justify-self: flex-end;
+    }
+    &__emotes{
+        justify-self: end;
+        font-size: 4rem;
+    }
+}
