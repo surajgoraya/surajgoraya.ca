@@ -17,7 +17,7 @@ const Page = (props) => {
     } else {
       document.title = WEBSITE_NAME;
     }
-  }, []); //This will trigger on mount.
+  }, [title]);
 
   return (
     <div className={PageStyles['page']}>

@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from '../../components/Header/Header';
 import Page from '../../components/Page/Page';
-import HomeStyles from './Home.module.scss';
 
 /**
  * 

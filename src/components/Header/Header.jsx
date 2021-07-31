@@ -1,6 +1,5 @@
 import Emoji from 'a11y-react-emoji';
-import React, { useEffect } from 'react';
-import Page from '../../components/Page/Page';
+import React from 'react';
 import HeaderStyles from './Header.module.scss';
 
 /**
