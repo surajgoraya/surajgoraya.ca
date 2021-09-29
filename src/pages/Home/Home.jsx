@@ -12,11 +12,11 @@ const Home = (props) => {
     <Page title={'home'}>
       <Header 
       title="hi, i'm suraj"
-      subtitle="fourth year computer science student."
+      subtitle="fourth year computer science student making audio &amp; visual things."
       emote="👳🏻‍♂️👋🏽"
       links={[
         <a href='https://github.com/surajgoraya'>github</a>,
-        <a href='https://interfra.me'>music</a>,
+        // <a href='https://interfra.me'>music</a>,
       ]}/>
     </Page>
   )

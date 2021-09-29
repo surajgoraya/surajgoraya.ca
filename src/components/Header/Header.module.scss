@@ -5,6 +5,7 @@
     a{
         font-weight: 700;
         text-decoration: none;
+        font-family: 'forma-djr-banner',sans-serif;
         color: $primary;
         opacity: 1;
         transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1.6s;
@@ -22,6 +23,7 @@
     align-content: stretch;
     justify-content: space-around;
     align-items: center;
+    
     &__content{
         justify-self: flex-end;
     }
