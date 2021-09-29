@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { WEBSITE_NAME } from '../../constants';
+import { warn } from '../../hooks/log';
 import PageStyles from './Page.module.scss';
 
 /**
@@ -10,12 +11,12 @@ import PageStyles from './Page.module.scss';
 const Page = (props) => {
   
   const { title } = props;
-
   useEffect(() => {
     if (title) {
       document.title = `${WEBSITE_NAME} - ${title}`;
     } else {
       document.title = WEBSITE_NAME;
+      warn('No page title was specified, using default site title.');
     }
   }, [title]);
 

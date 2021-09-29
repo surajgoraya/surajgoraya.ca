@@ -13,7 +13,11 @@ const Home = (props) => {
       <Header 
       title="hi, i'm suraj"
       subtitle="fourth year computer science student."
-      emote="👳🏻‍♂️👋🏽"/>
+      emote="👳🏻‍♂️👋🏽"
+      links={[
+        <a href='https://github.com/surajgoraya'>github</a>,
+        <a href='https://interfra.me'>music</a>,
+      ]}/>
     </Page>
   )
 }

@@ -2,10 +2,19 @@
 @import '../../styles/__breakpoints';
 
 .header{
+    a{
+        font-weight: 700;
+        text-decoration: none;
+        color: $primary;
+        opacity: 1;
+        transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1.6s;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
     // background-color: darken($color: $primary-highlight, $amount: 10%);
     width: 100%; //temp.
-    
-    background-color: $secondary;
+    background-color: $dark;
     padding: 5rem;
     display: flex;
     flex-direction: row;
@@ -19,5 +28,12 @@
     &__emotes{
         justify-self: end;
         font-size: 4rem;
+    }
+    &__links{
+        display: flex;
+        flex-direction: row;
+        :not(:first-child){
+            margin-left: 1rem;
+        }
     }
 }

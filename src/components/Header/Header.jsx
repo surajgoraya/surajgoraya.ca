@@ -13,6 +13,9 @@ const Header = (props) => {
       <div className={HeaderStyles['header__content']}>
         <h1>{props.title}</h1>
         <h3>{props.subtitle}</h3>
+        <div className={HeaderStyles['header__links']}>
+          {props.links ? props.links : null}
+        </div>
       </div>
       {props.cta ? 
         <div className={HeaderStyles['header__cta']}>
