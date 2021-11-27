@@ -1,0 +1,20 @@
+/*https://coolors.co/7785ac-2a2d34-fff7f8-ee4b6a-36393b*/
+:root {
+    --colour-blossom: #EE4B6A;
+    --colour-fade: #7785AC;
+    --colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+    --colour-bg: #FFF7F8;
+    --colour-bg-alt: rgb(245 239 240);
+    --colour-text: #36393B;
+}
+
+h5 {
+    font-weight: 200;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.muted { opacity: 0.7; font-weight: 200;}

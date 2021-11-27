@@ -1,0 +1,34 @@
+header>#logo line,
+header>#logo polyline,
+header>#logo path {
+    stroke: var(--colour-text) !important;
+}
+
+.main-line {
+    color: var(--colour-text) !important
+}
+
+.by-line {
+    margin: 0;
+}
+
+header>#logo {
+    margin: 1rem 0 0 0;
+    align-items: center;
+}
+
+header>#logo>svg {
+    height: 5em;
+    margin: 6rem 0rem 1rem 1rem;
+    padding: 0rem 4rem 1rem 0rem;
+    aspect-ratio: 1/1;
+}
+
+.links-menu {
+    margin: .5rem 0rem 1rem 0rem;
+}
+
+.footer {
+    font-size: .9em;
+    display: flex;
+}
