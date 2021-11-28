@@ -11,7 +11,6 @@ Warning: Currently in the middle of re-writing this & so I'm publishing a plain 
 ## Uses:
 A really cool minimalist CSS framework called [Sakura](https://github.com/oxalorg/sakura).
 
-it is really cool & amazing.
 Note that I've modified the version in this repo to use CSS variables.
 
 ## How to Run:
