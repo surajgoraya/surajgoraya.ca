@@ -1,3 +1,6 @@
+![](favicon.png)
+
+
 # surajgoraya.ca
 
 Personal site that I use for random things.
