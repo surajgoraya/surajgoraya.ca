@@ -1,11 +1,13 @@
 /*https://coolors.co/7785ac-2a2d34-fff7f8-ee4b6a-36393b*/
+/*alt https://coolors.co/009fb7-2a2d34-fff7f8-b23a48-36393b*/
+/*alt3: https://coolors.co/1e1e24-ff101f-fff8f0-4f759b-00a7e1*/
 :root {
-    --colour-blossom: #EE4B6A;
-    --colour-fade: #7785AC;
+    --colour-fade: #FF101F;
+    --colour-blossom: #4F759B;
     --colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
-    --colour-bg: #FFF7F8;
-    --colour-bg-alt: rgb(245 239 240);
-    --colour-text: #36393B;
+    --colour-bg: #FFF8F0;
+    --colour-bg-alt: hsl(from var(--colour-bg) (h+10%) s calc(l + 30%));
+    --colour-text: #1E1E24;
 }
 
 h5 {
@@ -17,4 +19,7 @@ h5 {
     flex-direction: row;
 }
 
-.muted { opacity: 0.7; font-weight: 200;}
+.muted {
+    opacity: 0.7;
+    font-weight: 200;
+}
