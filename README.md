@@ -1,22 +1,21 @@
-# create-svelte
+![](./static/favicon.png)
+# surajgoraya.ca
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Personal site that I use for random things.
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+Warning: Currently in the middle of re-writing this & like always, i may change frameworks. This is currently in Svelte.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+## Uses:
+A really cool minimalist CSS framework called [Sakura](https://github.com/oxalorg/sakura).
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+Note that I've modified the version in this repo to use CSS variables.
 
-> Note: the `@next` is temporary
+It also used [Svelte]('https://kit.svelte.com)
 
-## Developing
+## How to Run:
+
+### Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -27,7 +26,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
 Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
