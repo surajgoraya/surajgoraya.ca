@@ -1,6 +1,6 @@
 <script>
-	import Logo from '$lib/components/Logo.svelte';
-	import Footer from '$lib/Components/Footer.svelte';
+	import Logo from '../lib/Components/Logo.svelte';
+	import Footer from '../lib/Components/Logo.svelte';
 	import { fly } from 'svelte/transition';
 </script>
 
