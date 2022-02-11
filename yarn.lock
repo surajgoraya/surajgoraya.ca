@@ -931,6 +931,11 @@ sade@^1.7.4:
   dependencies:
     mri "^1.1.0"
 
+schema-dts@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/schema-dts/-/schema-dts-1.0.0.tgz#60e8a0f2cef5e644c44c843b03d35b37a4423c01"
+  integrity sha512-9t8gnY3RW2CbpuvA0pIpcaHFXkJTeNnWR4uaWI+PiYSfpuEeMw+2Q0Gac6YTnQb1B8TR6/+G71gQWuSE7dq6Zw==
+
 semver@^7.2.1:
   version "7.3.5"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.5.tgz#0b621c879348d8998e4b0e4be94b3f12e6018ef7"
@@ -1018,6 +1023,13 @@ svelte-hmr@^0.14.9:
   version "0.14.9"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.14.9.tgz#35f277efc789e1a6230185717347cddb2f8e9833"
   integrity sha512-bKE9+4qb4sAnA+TKHiYurUl970rjA0XmlP9TEP7K/ncyWz3m81kA4HOgmlZK/7irGK7gzZlaPDI3cmf8fp/+tg==
+
+svelte-meta-tags@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/svelte-meta-tags/-/svelte-meta-tags-2.3.0.tgz#2f6e73c3fa238027dad1a369a8593dfe8b3e75c9"
+  integrity sha512-41sk5683xMxQ4yD5oisrFQwAY5wIYu5eFxLicLOYhejujMqD7vxNpNf4QUYyE3HZl/g5g50LnBltdae5AbSKgA==
+  dependencies:
+    schema-dts "1.0.0"
 
 svelte@^3.44.0:
   version "3.46.3"

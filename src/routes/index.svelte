@@ -6,10 +6,12 @@
 
 <svelte:head>
 	<title>suraj goraya - home</title>
-	<meta
-		name="description"
-		content="Fifth year Computer Science student coding things & making music."
-	/>
+	<meta name="description" content="Fifth year Computer Science student coding things & making music.">
+
+	<link rel="stylesheet" href="../css/sakura.css" />
+	<link rel="stylesheet" href="../css/theme.css" />
+	<link rel="stylesheet" href="../css/main.css" />
+	<link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css" />
 </svelte:head>
 
 <body>
