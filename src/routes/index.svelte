@@ -5,11 +5,11 @@
 </script>
 
 <svelte:head>
+	<title>suraj goraya - home</title>
 	<meta
 		name="description"
 		content="Fifth year Computer Science student coding things & making music."
 	/>
-	<title>suraj goraya - home</title>
 </svelte:head>
 
 <body>
