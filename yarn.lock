@@ -90,12 +90,26 @@
     esbuild "^0.13.15"
     tiny-glob "^0.2.9"
 
+"@sveltejs/adapter-node@^1.0.0-next.0":
+  version "1.0.0-next.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-node/-/adapter-node-1.0.0-next.0.tgz#8b5c81a8d46a0743c9642114bb557837603b3570"
+  integrity sha512-NNdBGSARtrvLWLIUem/RKWYJ7cKq4xn0nxSASKogLSYL5SOrb6AgHunWQXv8VqDZ0jT7xQCORgASn006/HmaYQ==
+  dependencies:
+    "@sveltejs/app-utils" "1.0.0-next.0"
+
 "@sveltejs/adapter-vercel@1.0.0-next.39":
   version "1.0.0-next.39"
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.39.tgz#b9b9af9ef83a409a7ce1d4ad4bcf7548f2d72b26"
   integrity sha512-YOPGKIILm26h22GN4/iliXce61aTG3Dq5hX8xpDx0cNuCocv0OoLfIqiGpdyJ9NIMpjwXmpVoL4+nV+yh2wcSA==
   dependencies:
     esbuild "^0.13.15"
+
+"@sveltejs/app-utils@1.0.0-next.0":
+  version "1.0.0-next.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/app-utils/-/app-utils-1.0.0-next.0.tgz#da1c857632c32304e82b3fbb224eee642012c922"
+  integrity sha512-4fCuD+aLrq/iFVJWosIv8oi43tv4o7bGZVyNHMBamdIaVTcydRaPjxQCTM8OQPRVftHyrTIIvT3uH03kAxHZ0Q==
+  dependencies:
+    mime "^2.4.6"
 
 "@sveltejs/kit@next":
   version "1.0.0-next.245"
@@ -766,6 +780,11 @@ magic-string@^0.25.7:
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
   dependencies:
     sourcemap-codec "^1.4.4"
+
+mime@^2.4.6:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.6.0.tgz#a2a682a95cd4d0cb1d6257e28f83da7e35800367"
+  integrity sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==
 
 minimatch@^3.0.4:
   version "3.0.4"
