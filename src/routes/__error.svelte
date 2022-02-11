@@ -4,9 +4,11 @@
 	export function load({ error, status }) {
 		return {
 			props: {
-				title: `${status}: ${error.message ? error.message : Errors[status].error_desc}`,
-				error_info: Errors[status]
-			}
+				title: `${status}: ${
+					error.message ? error.message : Errors[status].error_desc
+				}`,
+				error_info: Errors[status],
+			},
 		};
 	}
 </script>
@@ -27,7 +29,10 @@
 		<p>{error_info.error_detail}</p>
 		<div>
 			<a href="/">&larr; Head home?</a>
-			<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{error_info.error_code}" target="_blank">&#8599; What are {error_info.error_code} errors?</a>
+			<a
+				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{error_info.error_code}"
+				target="_blank">&#8599; What are {error_info.error_code} errors?</a
+			>
 		</div>
 		<br />
 	</main>

@@ -3,38 +3,38 @@
 /*alt3: https://coolors.co/1e1e24-ff101f-fff8f0-4f759b-00a7e1 */
 /*alt4: https://coolors.co/ff8c42-a3333d-232c33-ffffff */
 :root {
-    --colour-blossom: hsl(355, 52%, 42%);
-    --colour-fade: hsl(23, 100%, 63%);
-    --colour-bg: hsl(0, 0%, 100%);
-    --colour-text: hsl(206, 19%, 17%);
-    --colour-bg-alt: hsl(0deg 0% 96%);
-    --colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+	--colour-blossom: hsl(355, 52%, 42%);
+	--colour-fade: hsl(23, 100%, 63%);
+	--colour-bg: hsl(0, 0%, 100%);
+	--colour-text: hsl(206, 19%, 17%);
+	--colour-bg-alt: hsl(0deg 0% 96%);
+	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 }
 @media (prefers-color-scheme: dark) {
-    :root {
-        --colour-blossom: hsl(355, 52%, 42%);
-        --colour-fade: hsl(23, 100%, 63%);
-        --colour-text: hsl(0, 0%, 100%);
-        --colour-bg: hsl(208deg 10% 11%);
-        --colour-bg-alt: hsl(208deg 5% 19%);
-        --colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
-    }
+	:root {
+		--colour-blossom: hsl(355, 52%, 42%);
+		--colour-fade: hsl(23, 100%, 63%);
+		--colour-text: hsl(0, 0%, 100%);
+		--colour-bg: hsl(208deg 10% 11%);
+		--colour-bg-alt: hsl(208deg 5% 19%);
+		--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+	}
 }
 
 h5 {
-    font-weight: 200;
+	font-weight: 200;
 }
 
-p{
-    font-weight: 300;
+p {
+	font-weight: 300;
 }
 
 .h-container {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .muted {
-    opacity: 0.7;
-    font-weight: 200;
+	opacity: 0.7;
+	font-weight: 200;
 }

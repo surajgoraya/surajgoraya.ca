@@ -1,12 +1,13 @@
 ![](./static/favicon.png)
+
 # surajgoraya.ca
 
 Personal site that I use for random things.
 
-
 Warning: Currently in the middle of re-writing this & like always, i may change frameworks. This is currently in Svelte.
 
 ## Uses:
+
 A really cool minimalist CSS framework called [Sakura](https://github.com/oxalorg/sakura).
 
 Note that I've modified the version in this repo to use CSS variables.
