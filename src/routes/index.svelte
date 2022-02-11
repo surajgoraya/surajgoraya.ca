@@ -36,8 +36,8 @@
 		<h6><em>It's me! The "pretty cool guy" guy!</em></h6>
 		<p>
 			I'm a fifth year Computer Science student, with an interest in UI/UX, HCI,
-			and computer ethics. When I'm not staring at a screen... I like to stare
-			at a screen some more and
+			and computer ethics. When I'm not staring at a screen... I like to stare at a
+			screen some more and
 			<a href="http://music.surajgoraya.ca">make music</a> from time to time!
 		</p>
 		<p>
