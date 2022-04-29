@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3001;
 const ORIGIN_URL = 'https://surajgoraya.ca';
 
 app.use(cors({ origin: process.env.DEV ? '*' : ORIGIN_URL }));
-app.use(helmet());
+// app.use(helmet()); FIXME: Look at this later.
 app.enable('trust proxy');
 
 app.use((req, res, next) => {

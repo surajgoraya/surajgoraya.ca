@@ -1,7 +1,8 @@
 <script>
-	import Logo from '../lib/Components/Logo.svelte';
+
 	import Footer from '../lib/Components/Footer.svelte';
 	import { fly } from 'svelte/transition';
+	import Top from '$lib/Components/Top.svelte';
 </script>
 
 <svelte:head>
@@ -12,28 +13,18 @@
 	/>
 </svelte:head>
 
-<body>
-	<header>
-		<div class="h-container" id="logo">
-			<Logo />
-			<div>
-				<h1 class="main-line">suraj goraya.</h1>
-				<h4 class="by-line">
-					5th year computer science student, making music and coding things.
-				</h4>
-				<!-- <div class="links-menu">
-                    <a href='/words'>words</a>
-                </div> -->
-			</div>
-		</div>
-	</header>
+<body 
+in:fly="{{ y: -50, duration: 250, delay: 300 }}"
+out:fly="{{ y: -50, duration: 250 }}" 
+>
+	<Top/>
 	<main>
 		<blockquote>
 			"[suraj is] a...uh... pretty cool guy, I guess?" &#8212; <em
 				>Midnight (dog)</em
 			>
 		</blockquote>
-		<h6><em>It's me! The "pretty cool guy" guy!</em></h6>
+		<h6 class="h1"><em>It's me! The "pretty cool guy" guy!</em></h6>
 		<p>
 			I'm a fifth year Computer Science student, with an interest in UI/UX, HCI,
 			and computer ethics. When I'm not staring at a screen... I like to stare at a
