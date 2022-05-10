@@ -10,9 +10,6 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
 		"start": "node server.js"
 	},
-	"engines": {
-		"node": "17.x"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
