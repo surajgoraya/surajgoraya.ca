@@ -2,7 +2,10 @@
  * File: server.js
  * 
  * Server.js serves as the nodejs handler for all the svelte kit stuff.
+ * 
+ * @deprecated May 10, 2022 -- Deprecated, do not use!
  */
+
 import { handler } from './build/handler.js';
 import express from 'express';
 import helmet from 'helmet';
