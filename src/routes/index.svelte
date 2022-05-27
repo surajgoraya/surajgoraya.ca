@@ -1,5 +1,4 @@
 <script>
-
 	import Footer from '../lib/Components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
@@ -13,11 +12,8 @@
 	/>
 </svelte:head>
 
-<body 
-in:fly="{{ y: -50, duration: 250, delay: 300 }}"
-out:fly="{{ y: -50, duration: 250 }}" 
->
-	<Top/>
+<body in:fly={{ y: -50, duration: 250, delay: 300 }} out:fly={{ y: -50, duration: 250 }}>
+	<Top />
 	<main>
 		<blockquote>
 			"[suraj is] a...uh... pretty cool guy, I guess?" &#8212; <em
@@ -26,7 +22,7 @@ out:fly="{{ y: -50, duration: 250 }}"
 		</blockquote>
 		<h6 class="h1"><em>It's me! The "pretty cool guy" guy!</em></h6>
 		<p>
-			I'm a fifth year Computer Science student, with an interest in UI/UX, HCI,
+			I'm a fifth year Computer Science student, <a href="/research">with an interest in UI/UX, HCI</a>,
 			and computer ethics. When I'm not staring at a screen... I like to stare at a
 			screen some more and
 			<a href="http://music.surajgoraya.ca">make music</a> from time to time!

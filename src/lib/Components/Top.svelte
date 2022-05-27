@@ -18,7 +18,7 @@
         <hr>
         <div class="links-menu">
             <a href="/" class:active="{url === '/'}">home</a>
-            <!-- <a href='/research' class:active="{url === '/research'}">research</a> -->
+            <a href='/research' class:active="{url === '/research'}">research</a>
         </div>
         <hr/>
     </div>
