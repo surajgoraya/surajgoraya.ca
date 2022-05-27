@@ -58,12 +58,12 @@
 		<h6 class="mini_headings">DOWNLOADS</h6>
 		<div class="downloads">
 			<a
-				href="/research/GORAYAS-An_Analysis_Into_Design Systems_And_Government.pdf"
+				href="https://files.surajgoraya.ca/research/GORAYAS-CIS4900-Presentation.pdf"
 				target="_blank"
 				><i class="bi bi-file-earmark-arrow-down-fill" /> GORAYAS-An_Analysis_Into_Design
 				Systems_And_Government.pdf</a
 			>
-			<a href="/research/GORAYAS-CIS4900-Presentation.pdf" target="_blank"
+			<a href="https://files.surajgoraya.ca/research/GORAYAS-CIS4900-Presentation.pdf" target="_blank"
 				><i class="bi bi-file-earmark-arrow-down-fill" /> GORAYAS-CIS4900-Presentation.pdf</a
 			>
 		</div>
