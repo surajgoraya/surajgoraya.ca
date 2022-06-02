@@ -96,6 +96,7 @@
 <style>
 	.subtitle {
 		margin-top: -1rem;
+		letter-spacing: .8px;
 	}
 	.subtitle > i {
 		font-size: 80%;
