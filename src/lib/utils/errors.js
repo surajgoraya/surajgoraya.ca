@@ -12,7 +12,7 @@ const Errors = {
 		error_desc: 'Gone.',
 		error_top: 'Poof.',
 		error_detail:
-			"Looks like whatever page or resource you were requesting is gone and is unlikely to return. I'm sorry :((. If you think this is a mistake please get in contact!",
+			"The page or resource you were requesting is gone and is unlikely to return. I'm sorry :((. If you think this is a mistake please get in contact!",
 		year: new Date().getFullYear().toString(),
 	},
 };

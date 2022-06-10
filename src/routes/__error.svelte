@@ -14,6 +14,8 @@
 </script>
 
 <script>
+	import Top from '$lib/Components/Top.svelte';
+
 	export let title;
 	export let error_info;
 </script>
@@ -24,6 +26,7 @@
 
 <body>
 	<main>
+		<Top logoOnly />
 		<h3>{error_info.error_code}: {error_info.error_desc}</h3>
 		<h6><em>{error_info.error_top}</em></h6>
 		<p>{error_info.error_detail}</p>

@@ -7,7 +7,7 @@
 	<!-- <hr /> -->
 	<div class="footer">
 		<p class="muted">
-			&copy; suraj goraya {current_year}, made with &hearts; in Canada &nbsp;
+			&copy; suraj goraya {current_year}, <a href="/colophon">made with &hearts;</a> in Canada &nbsp;
 		</p>
 		<!-- <p class="muted"><em>last updated, {last_updated}</em></p> -->
 	</div>

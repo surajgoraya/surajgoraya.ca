@@ -1,4 +1,7 @@
 <script>
+	//Allows showing only a logo for the header with no menubar options.
+	export let logoOnly;
+
 	import { onMount } from 'svelte';
 	import Logo from './Logo.svelte';
 	let url = '';
@@ -25,10 +28,12 @@
 			/>
 		</svg>
 	</div>
+	{#if !logoOnly}
     <div class="links-menu">
         <a href="/" class:active={url === '/'}>home</a>
         <a href="/research" class:active={url === '/research'}>research</a>
     </div>
+	{/if}
 </header>
 
 <style>
