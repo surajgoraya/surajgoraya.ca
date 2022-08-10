@@ -13,7 +13,7 @@
 </svelte:head>
 
 <body in:fly={{ y: -50, duration: 250, delay: 300 }} out:fly={{ y: -50, duration: 250 }}>
-	<Top />
+	<Top logoOnly={false}/>
 	<main>
 		<blockquote>
 			"[suraj is] a...uh... pretty cool guy, I guess?" &#8212; <em
