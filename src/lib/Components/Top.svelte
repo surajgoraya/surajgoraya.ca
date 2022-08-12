@@ -1,18 +1,30 @@
 <script>
-	import { fade, fly } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
+	import { browser } from '$app/env';
 
 	//Allows showing only a logo for the header with no menubar options.
 	export let logoOnly;
 
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import Logo from './Logo.svelte';
 	let clickedOnBurger = false;
 	let url = '';
-	
-	const burgerToggle = () => clickedOnBurger = !clickedOnBurger;
+
+	const burgerToggle = () => (clickedOnBurger = !clickedOnBurger);
+	const resetBurger = () => {
+		clickedOnBurger = false;
+	};
 
 	onMount(() => {
+		window.addEventListener('resize', resetBurger);
 		url = window.location.pathname;
+	});
+
+	onDestroy(() => {
+		//Check if the app is running SSR or SPA, depending on which, we need to remove the event listener to prevent mem leaks.
+		if (browser) {
+			window.removeEventListener('resize', resetBurger);
+		}
 	});
 </script>
 
@@ -21,17 +33,25 @@
 		<Logo />
 	</div>
 	{#if !logoOnly}
-		<div class="main__hamburger" class:visible={clickedOnBurger} on:click={burgerToggle}>
+		<div
+			class="main__hamburger"
+			class:visible={clickedOnBurger}
+			on:click={burgerToggle}
+		>
 			<span class="bar" />
 			<span class="bar" />
 			<span class="bar" />
 		</div>
-		
+
 		{#if clickedOnBurger}
-		<div class="links-menu" class:visible={clickedOnBurger} in:fade out:fade>
-			<a href="/" class:active={url === '/'} in:fade={{delay:300}}>home</a>
-			<a href="/research" class:active={url === '/research'}  in:fade={{delay:500}}>research</a>
-		</div>
+			<div class="links-menu" class:visible={clickedOnBurger} in:fade out:fade>
+				<a href="/" class:active={url === '/'} in:fade={{ delay: 300 }}>home</a>
+				<a
+					href="/research"
+					class:active={url === '/research'}
+					in:fade={{ delay: 500 }}>research</a
+				>
+			</div>
 		{/if}
 
 		<div class="links-menu desktop">
@@ -49,8 +69,8 @@
 		cursor: pointer;
 	}
 	.main__hamburger .bar {
-        transition: transform 0.5s ease, opacity 0.5s ease;
-    }
+		transition: transform 0.5s ease, opacity 0.5s ease;
+	}
 	.main__hamburger:hover {
 		opacity: 0.75;
 	}
