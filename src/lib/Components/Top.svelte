@@ -1,12 +1,13 @@
 <script>
 	import { fade } from 'svelte/transition';
 	import { browser } from '$app/env';
+	import { onDestroy, onMount } from 'svelte';
+	import Logo from './Logo.svelte';
+	import { MENU_LINKS } from '$lib/config';
 
 	//Allows showing only a logo for the header with no menubar options.
 	export let logoOnly;
 
-	import { onDestroy, onMount } from 'svelte';
-	import Logo from './Logo.svelte';
 	let clickedOnBurger = false;
 	let url = '';
 
@@ -45,18 +46,24 @@
 
 		{#if clickedOnBurger}
 			<div class="links-menu" class:visible={clickedOnBurger} in:fade out:fade>
-				<a href="/" class:active={url === '/'} in:fade={{ delay: 300 }}>home</a>
-				<a
-					href="/research"
-					class:active={url === '/research'}
-					in:fade={{ delay: 500 }}>research</a
-				>
+				{#each MENU_LINKS as link, i}
+					<a
+						href={link.link}
+						class:active={url === link.link}
+						in:fade={{ delay: (i + 1) * 300 }}>{link.name}</a
+					>
+				{/each}
 			</div>
 		{/if}
 
 		<div class="links-menu desktop">
-			<a href="/" class:active={url === '/'}>home</a>
-			<a href="/research" class:active={url === '/research'}>research</a>
+			{#each MENU_LINKS as link}
+				<a
+					href={link.link}
+					class:active={url === link.link}
+					>{link.name}</a
+				>
+			{/each}
 		</div>
 	{/if}
 </header>
