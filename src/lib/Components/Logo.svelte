@@ -82,6 +82,7 @@
 
 <style>
 	.branding {
+		z-index: 3;
 		margin: -0.75rem 0 0 1rem;
         height: auto;
         width: 6em;
@@ -105,6 +106,7 @@
 		stroke: var(--colour-text) !important;
 	}
 	#logo-svg {
+		z-index: 3;
 		height: 4em;
 		aspect-ratio: 1/1;
 	}
