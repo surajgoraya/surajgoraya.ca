@@ -15,7 +15,7 @@
 
 <style>
 	footer {
-		border-top: 2px solid #ddd;
+		border-top: 2px solid var(--colour-bg-alt);
 		padding-top: 1rem;
         border-radius: 0.5px;
 	}
