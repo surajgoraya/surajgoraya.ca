@@ -2,18 +2,42 @@
 	import Footer from '../lib/Components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
+	import SvelteSEO from 'svelte-seo';
 </script>
 
-<svelte:head>
-	<title>suraj goraya - home</title>
-	<meta
-		name="description"
-		content="Fifth year Computer Science student coding things & making music."
-	/>
-</svelte:head>
+<SvelteSEO
+	title={'suraj goraya - home'}
+	description={'Fifth year Computer Science student coding things & making music.'}
+	keywords={'suraj goraya, computer science student, undergraduate student, designer toronto, developer toronto'}
+	openGraph={{
+		title: 'suraj goraya - home',
+		description:
+			'Fifth year Computer Science student coding things & making music.',
+		url: 'https://surajgoraya.ca/',
+		type: 'website',
+		images: [
+			{
+				url: 'https://surajgoraya.ca/perma/cover-square.jpg',
+				width: 3980,
+				height: 3980,
+				alt: 'A black and white picture of Suraj, standing looking down',
+			},
+		],
+	}}
+	twitter={{
+		site: '@surajgoraya',
+		title: 'suraj goraya - home',
+		description: 'Fifth year Computer Science student coding things & making music.',
+		url: 'https://surajgoraya.ca/perma/cover-square.jpg',
+		imageAlt: 'A black and white picture of Suraj, standing looking down',
+	}}
+/>
 
-<body in:fly={{ y: -50, duration: 250, delay: 300 }} out:fly={{ y: -50, duration: 250 }}>
-	<Top logoOnly={false}/>
+<body
+	in:fly={{ y: -50, duration: 250, delay: 300 }}
+	out:fly={{ y: -50, duration: 250 }}
+>
+	<Top logoOnly={false} />
 	<main>
 		<blockquote>
 			"[suraj is] a...uh... pretty cool guy, I guess?" &#8212; <em
@@ -22,9 +46,10 @@
 		</blockquote>
 		<h6 class="h1"><em>It's me! The "pretty cool guy" guy!</em></h6>
 		<p>
-			I'm a fifth year Computer Science student, <a href="/research">with an interest in UI/UX, HCI</a>,
-			and computer ethics. When I'm not staring at a screen... I like to stare at a
-			screen some more and
+			I'm a fifth year Computer Science student, <a href="/research"
+				>with an interest in UI/UX, HCI</a
+			>, and computer ethics. When I'm not staring at a screen... I like to stare
+			at a screen some more and
 			<a href="http://music.surajgoraya.ca">make music</a> from time to time!
 		</p>
 		<p>
