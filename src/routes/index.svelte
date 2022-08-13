@@ -17,9 +17,9 @@
 		type: 'website',
 		images: [
 			{
-				url: 'https://surajgoraya.ca/perma/cover-square.jpg',
-				width: 3980,
-				height: 3980,
+				url: 'https://surajgoraya.ca/perma/cover.jpg',
+				width: 4000,
+				height: 2250,
 				alt: 'A black and white picture of Suraj, standing looking down',
 			},
 		],
@@ -28,7 +28,7 @@
 		site: '@surajgoraya',
 		title: 'suraj goraya - home',
 		description: 'Fifth year Computer Science student coding things & making music.',
-		url: 'https://surajgoraya.ca/perma/cover-square.jpg',
+		url: 'https://surajgoraya.ca/perma/cover.jpg',
 		imageAlt: 'A black and white picture of Suraj, standing looking down',
 	}}
 />
