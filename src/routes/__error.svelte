@@ -27,15 +27,17 @@
 <body>
 	<main>
 		<Top logoOnly />
-		<h3>{error_info.error_code}: {error_info.error_desc}</h3>
-		<h6><em>{error_info.error_top}</em></h6>
-		<p>{error_info.error_detail}</p>
+		<h3>{error_info?.error_code}: {error_info?.error_desc}</h3>
+		<h6><em>{error_info?.error_top}</em></h6>
+		<p>{error_info?.error_detail}</p>
 		<div>
 			<a href="/">&larr; Head home?</a>
+			{#if error_info && error_info.error_code !== undefined}
 			<a
 				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{error_info.error_code}"
 				target="_blank">&#8599; What are {error_info.error_code} errors?</a
 			>
+			{/if}
 		</div>
 		<br />
 	</main>
