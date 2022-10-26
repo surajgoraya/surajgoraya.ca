@@ -8,7 +8,7 @@
 <SvelteSEO
 	title={'suraj goraya - home'}
 	description={'Fifth year Computer Science student coding things & making music.'}
-	keywords={'suraj goraya, computer science student, undergraduate student, designer toronto, developer toronto'}
+	keywords={'suraj goraya, computer science student, undergraduate student, designer toronto, developer toronto, music producer'}
 	openGraph={{
 		title: 'suraj goraya - home',
 		description:
