@@ -1,6 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import { browser } from '$app/env';
+	import { browser } from '$app/environment';
 	import { onDestroy, onMount } from 'svelte';
 	import Logo from './Logo.svelte';
 	import { MENU_LINKS } from '$lib/config';

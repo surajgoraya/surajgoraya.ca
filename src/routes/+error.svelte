@@ -1,50 +1,42 @@
-<script context="module">
-	import Errors from '$lib/utils/errors';
-	/** @type {import('@sveltejs/kit').ErrorLoad} */
-	export function load({ error, status }) {
-		return {
-			props: {
-				title: `${status}: ${
-					error.message ? error.message : Errors[status].error_desc
-				}`,
-				error_info: Errors[status],
-			},
-		};
-	}
-</script>
-
 <script>
+	import { page } from '$app/stores';
 	import Top from '$lib/Components/Top.svelte';
-
-	export let title;
-	export let error_info;
 </script>
+
+
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{`suraj goraya | ${$page.error.message.toLocaleLowerCase()}`}</title>
 </svelte:head>
-
 <body>
 	<main>
-		<Top logoOnly />
-		<h3>{error_info?.error_code}: {error_info?.error_desc}</h3>
-		<h6><em>{error_info?.error_top}</em></h6>
-		<p>{error_info?.error_detail}</p>
-		<div>
-			<a href="/">&larr; Head home?</a>
-			{#if error_info && error_info.error_code !== undefined}
-			<a
-				href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/{error_info.error_code}"
-				target="_blank">&#8599; What are {error_info.error_code} errors?</a
-			>
-			{/if}
+		<Top logoOnly={false}/>
+		<div class="main">
+			<h4><b>{$page.status}</b> | {$page.error.message}</h4>
+			<br />
+			<p>Looks like something went wrong, don't worry though! You can still find your way back home by clicking below!</p>
+			<br />
 		</div>
-		<br />
+		<div class="larr">
+			<a href="/">&larr; Head home?</a>
+		</div>
 	</main>
 </body>
 
 <style>
-	div {
+	h4{
+		font-weight: 300;
+	}
+	div.main {
+		opacity: 0.5;
+		padding: 4rem;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		align-content: center;
+	}
+	div.larr {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
