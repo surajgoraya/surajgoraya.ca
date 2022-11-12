@@ -1,5 +1,5 @@
 <script>
-	import Footer from '../lib/Components/Footer.svelte';
+	import Footer from '../../lib/Components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
 </script>
