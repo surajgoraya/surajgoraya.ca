@@ -49,6 +49,7 @@
             <li>Mastodon: <a href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li>
             <li>Email: <a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a></li>
             <li>Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a></li>
+            <li>GitHub: <a href="https://github.com/surajgoraya">@surajgoraya</a></li>
         </ul>
         <p>Music related stuff</p>
         <li><a href="https://open.spotify.com/user/interframe?si=f2e030a40ff04477">Spotify (Listener Profile)</a></li>
