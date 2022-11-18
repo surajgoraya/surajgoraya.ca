@@ -116,8 +116,8 @@
 		margin-right: 1em;
 	}
 
-	.links-menu > a:not(:nth-child(1)) {
-		margin: 0rem 0rem 0rem 1rem !important;
+	.links-menu > a {
+		margin: 0rem 0rem 0rem 1.25rem !important;
 	}
 	.h-container {
 		display: flex;
