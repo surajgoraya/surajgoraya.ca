@@ -52,7 +52,6 @@
             <li>GitHub: <a href="https://github.com/surajgoraya">@surajgoraya</a></li>
         </ul>
         <p>Music related stuff</p>
-        <li><a href="https://open.spotify.com/user/interframe?si=f2e030a40ff04477">Spotify (Listener Profile)</a></li>
         <li>Spotify (Artist Profile): <a href="https://open.spotify.com/artist/6FWyVNtwkA0CeTM9I7Q4DI?si=uKrpM4jgQGmVa1EY10nDSw">Interframe</a></li>
         <br/>
 		<p><i>If we ever interacted, I hope we meet on the internet again. If we never get a chance to, I hope you live a happy and wonderful life :) <br/><br/> ~wishing you nothing but love. </i></p>
