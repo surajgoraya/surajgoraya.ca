@@ -12,11 +12,13 @@
 }
 @media (prefers-color-scheme: dark) {
 	:root {
-		--colour-blossom: hsl(355, 52%, 42%);
-		--colour-fade: hsl(23, 100%, 63%);
+		/* --colour-fade: hsl(355, 52%, 42%); */
+		--colour-fade:  hsla(273, 100%, 63%, 0.817);
+		/* --colour-blossom: hsl(23, 100%, 63%); */
+		--colour-blossom: hsl(273, 100%, 63%);
 		--colour-text: hsl(0, 0%, 100%);
-		--colour-bg: hsl(208deg 10% 11%);
-		--colour-bg-alt: hsl(208deg 5% 19%);
+		--colour-bg: rgb(26, 26, 26);
+		--colour-bg-alt: rgb(46, 42, 42);
 		--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 	}
 }
