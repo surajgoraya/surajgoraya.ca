@@ -3,6 +3,28 @@
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
 	import SvelteSEO from 'svelte-seo';
+	
+	const HAS_BEEN_UPDATED = true;
+	
+	const PUBLISH_TIME = "NOVEMBER 2022";
+	const LAST_UPDATE = "DECEMBER 2022";
+	
+	let switchPublish = false
+
+	function renderLastUpdate (switchPublish) {
+		if(HAS_BEEN_UPDATED && switchPublish === false){
+			return `LAST UPDATED ${LAST_UPDATE}`
+		} else if(HAS_BEEN_UPDATED && switchPublish === true) {
+			return `PUBLISHED ${PUBLISH_TIME}`
+		} else {
+			return `PUBLISHED ${PUBLISH_TIME}`
+		}
+	}
+
+	$: pub_time_meta = switchPublish ? renderLastUpdate(true) : renderLastUpdate(false);
+	$: pub_time_rev = switchPublish ? renderLastUpdate(false) : renderLastUpdate(true);
+
+
 </script>
 
 <SvelteSEO
@@ -59,13 +81,16 @@
         <br/>
 		<p><i>If we ever interacted, I hope we meet on the internet again. If we never get a chance to, I hope you live a happy and wonderful life :) <br/><br/> ~wishing you nothing but love. </i></p>
 		<h6 class="h2 publish_time">
-			<i class="bi bi-clock-history" /> &nbsp; LAST UPDATED DECEMBER 2022
+			<i  class={switchPublish ? 'bi bi-clock-fill' : 'bi bi-clock-history'} /> &nbsp; <abbr title={pub_time_rev} on:click={()=> switchPublish=!switchPublish}>{pub_time_meta}</abbr>
 		</h6>
 	</main>
 	<Footer />
 </body>
 
 <style>
+	abbr, code {
+		cursor: pointer;
+	}
 	.subtitle {
 		margin-top: -1rem;
 		letter-spacing: 0.8px;
