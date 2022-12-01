@@ -48,6 +48,7 @@
         <ul>
             <li>Instagram: <a href="https://instagram.com/surajgoraya"> @surajgoraya</a></li>
             <li>Discord: <code>Interframe#5477</code></li>
+			<li>Hive: <code>@surajgoraya</code></li>
             <li>Mastodon: <a href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li>
             <li>Email: <a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a></li>
             <li>Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a></li>
@@ -58,9 +59,8 @@
         <br/>
 		<p><i>If we ever interacted, I hope we meet on the internet again. If we never get a chance to, I hope you live a happy and wonderful life :) <br/><br/> ~wishing you nothing but love. </i></p>
 		<h6 class="h2 publish_time">
-			<i class="bi bi-clock-history" /> &nbsp; LAST UPDATED NOVEMBER 2022
+			<i class="bi bi-clock-history" /> &nbsp; LAST UPDATED DECEMBER 2022
 		</h6>
-
 	</main>
 	<Footer />
 </body>
