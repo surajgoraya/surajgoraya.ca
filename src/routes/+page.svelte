@@ -7,7 +7,7 @@
 
 <SvelteSEO
 	title={'suraj goraya - home'}
-	description={'Fifth year Computer Science student coding things & making music.'}
+	description={'Computer Science researcher coding things & making music.'}
 	keywords={'suraj goraya, computer science student, undergraduate student, designer toronto, developer toronto, music producer'}
 	openGraph={{
 		title: 'suraj goraya - home',
@@ -44,9 +44,9 @@
 				>Midnight (dog)</em
 			>
 		</blockquote>
-		<h6 class="h1"><em>It's me! The "pretty cool guy" guy!</em></h6>
+		<h6 class="h1"><em>Right, so, uh. Who are you?</em></h6>
 		<p>
-			I'm a fifth year Computer Science student, <a href="/research"
+			I'm a Computer Science Masters student, <a href="/research"
 				>with an interest in UI/UX, HCI</a
 			>, and computer ethics. When I'm not staring at a screen... I like to stare
 			at a screen some more and
