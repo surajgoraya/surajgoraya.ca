@@ -71,7 +71,7 @@
             <li>Instagram: <a href="https://instagram.com/surajgoraya"> @surajgoraya</a></li>
             <li>Discord: <code>Interframe#5477</code></li>
 			<li>Hive: <code>@surajgoraya</code></li>
-            <li>Mastodon: <a href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li>
+            <li>Mastodon: <a rel="me" href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li>
             <li>Email: <a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a></li>
             <li>Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a></li>
             <li>GitHub: <a href="https://github.com/surajgoraya">@surajgoraya</a></li>
