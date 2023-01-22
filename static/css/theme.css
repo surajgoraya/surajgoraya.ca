@@ -10,6 +10,7 @@
 	--colour-bg-alt: hsl(0deg 0% 96%);
 	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 }
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		/* --colour-fade: hsl(355, 52%, 42%); */
@@ -21,6 +22,10 @@
 		--colour-bg-alt: rgb(46, 42, 42);
 		--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 	}
+}
+
+html, body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Segoe UI', sans-serif;
 }
 
 h5 {
