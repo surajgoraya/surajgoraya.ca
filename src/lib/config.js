@@ -1,5 +1,5 @@
 export const MENU_LINKS = [
     {name: "home", link: "/"},
-    {name: "research", link: "/research"},
+    {name: "research", link: "/research/ds-and-gov", lazyMatch: true},
     {name: "connect", link: "/connect"},
 ]

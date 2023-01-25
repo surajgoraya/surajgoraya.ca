@@ -1,5 +1,5 @@
 <script>
-	import Footer from '../../lib/Components/Footer.svelte';
+	import Footer from '$lib/Components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
 </script>
@@ -20,7 +20,8 @@
 <body in:fly={{ y: -50, duration: 250, delay: 300 }} out:fly={{ y: -50, duration: 250 }}>
 	<Top />
 	<main>
-		<h2 class="h1">research</h2>
+		<h1 class="top-highlight">RESEARCH</h1>
+		<h2 class="h1">Design Systems and Government</h2>
 		<h5 class="h2 subtitle">
 			<i class="bi bi-arrow-return-right" /> undergraduate<i
 				class="bi bi-arrow-right-circle"
@@ -95,7 +96,7 @@
 
 <style>
 	.subtitle {
-		margin-top: -1rem;
+		margin-top: -.5rem;
 		letter-spacing: .8px;
 	}
 	.subtitle > i {
@@ -108,7 +109,7 @@
 		font-weight: bold;
 	}
 	.publish_time {
-		padding: 1rem 0rem;
+		padding: 2rem 0rem;
 		/* background-color: aliceblue; */
 		width: 100%;
 		text-transform: uppercase;

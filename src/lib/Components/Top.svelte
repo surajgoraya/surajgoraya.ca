@@ -16,6 +16,16 @@
 		clickedOnBurger = false;
 	};
 
+	const match_path = (link, url) => {
+		if (link.lazyMatch) {
+			if (url.includes(link.link)) {
+				return true;
+			}
+		} else {
+			return url === link.link;
+		}
+	};
+
 	onMount(() => {
 		window.addEventListener('resize', resetBurger);
 		url = window.location.pathname;
@@ -49,7 +59,7 @@
 				{#each MENU_LINKS as link, i}
 					<a
 						href={link.link}
-						class:active={url === link.link}
+						class:active={match_path(link, url)}
 						in:fade={{ delay: (i + 1) * 300 }}>{link.name}</a
 					>
 				{/each}
@@ -58,11 +68,7 @@
 
 		<div class="links-menu desktop">
 			{#each MENU_LINKS as link}
-				<a
-					href={link.link}
-					class:active={url === link.link}
-					>{link.name}</a
-				>
+				<a href={link.link} class:active={match_path(link, url)}>{link.name}</a>
 			{/each}
 		</div>
 	{/if}
