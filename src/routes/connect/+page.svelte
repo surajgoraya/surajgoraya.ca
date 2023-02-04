@@ -68,18 +68,21 @@
 		</h5>
 		<p>Personal socials below: </p>
         <ul>
-            <li>Instagram: <a href="https://instagram.com/surajgoraya"> @surajgoraya</a></li>
-            <li>Discord: <code>Interframe#5477</code></li>
-			<li>Hive: <code>@surajgoraya</code></li>
-            <li>Mastodon: <a rel="me" href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li>
-            <li>Email: <a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a></li>
-            <li>Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a></li>
-            <li>GitHub: <a href="https://github.com/surajgoraya">@surajgoraya</a></li>
+            <li><i class="bi bi-instagram"></i>&nbsp;Instagram: <a href="https://instagram.com/surajgoraya"> @surajgoraya</a></li>
+            <!-- <li><i class="bi bi-discord"></i>&nbsp;Discord: <code>Interframe#5477</code></li> -->
+			<!-- <li>Hive: <code>@surajgoraya</code></li> -->
+            <!-- <li>Mastodon: <a rel="me" href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li> -->
+            <li><i class="bi bi-envelope"></i>&nbsp;Email: <a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a></li>
+            <li><i class="bi bi-github"></i>&nbsp;GitHub: <a href="https://github.com/surajgoraya">@surajgoraya</a></li>
+            <li><i class="bi bi-globe"></i>&nbsp;Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a></li>
         </ul>
         <p>Music related stuff</p>
-        <li>Spotify (Artist Profile): <a href="https://open.spotify.com/artist/6FWyVNtwkA0CeTM9I7Q4DI?si=uKrpM4jgQGmVa1EY10nDSw">Interframe</a></li>
+		<ul class="music-section">
+        	<li><i class="bi bi-spotify"></i>&nbsp;Spotify (Artist Profile): <a href="https://open.spotify.com/artist/6FWyVNtwkA0CeTM9I7Q4DI?si=uKrpM4jgQGmVa1EY10nDSw">Interframe</a></li>
+		</ul>
         <br/>
 		<p><i>If we ever interacted, I hope we meet on the internet again. If we never get a chance to, I hope you live a happy and wonderful life :) <br/><br/> ~wishing you nothing but love. </i></p>
+		<br/>
 		<h6 class="h2 publish_time">
 			<i  class={switchPublish ? 'bi bi-clock-fill' : 'bi bi-clock-history'} /> &nbsp; <abbr title={pub_time_rev} on:click={()=> switchPublish=!switchPublish}>{pub_time_meta}</abbr>
 		</h6>
@@ -88,6 +91,15 @@
 </body>
 
 <style>
+	li{
+		list-style: none;
+	}
+	li:not(:nth-child(0)){
+		margin: 0 0 2rem -0.1rem;
+	}
+	.music-section > li {
+		margin-bottom: -2rem;
+	}
 	abbr, code {
 		cursor: pointer;
 	}
