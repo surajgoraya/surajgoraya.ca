@@ -74,7 +74,7 @@
             <!-- <li>Mastodon: <a rel="me" href="https://mas.to/@surajgoraya">@surajgoraya@mast.to</a></li> -->
             <li><i class="bi bi-envelope"></i>&nbsp;Email: <a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a></li>
             <li><i class="bi bi-github"></i>&nbsp;GitHub: <a href="https://github.com/surajgoraya">@surajgoraya</a></li>
-            <li><i class="bi bi-globe"></i>&nbsp;Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a></li>
+            <li><i class="bi bi-globe"></i>&nbsp;Website: <a href="https://surajgoraya.ca">surajgoraya.ca</a>&nbsp; <div class="hint"><i class="bi bi-arrow-left"></i> &nbsp;You are here!</div></li>
         </ul>
         <p>Music related stuff</p>
 		<ul class="music-section">
@@ -91,6 +91,13 @@
 </body>
 
 <style>
+	.hint{
+		display: inline-block;
+		font-size: 1.5rem;
+		color: var(--colour-);
+		font-weight: 200;
+		opacity: 0.4;
+	}
 	li{
 		list-style: none;
 	}
