@@ -7,7 +7,7 @@
 	const HAS_BEEN_UPDATED = true;
 	
 	const PUBLISH_TIME = "NOVEMBER 2022";
-	const LAST_UPDATE = "DECEMBER 2022";
+	const LAST_UPDATE = "JANUARY 2023";
 	
 	let switchPublish = false
 
