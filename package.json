@@ -10,6 +10,7 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@svelte-plugins/tooltips": "^0.1.6",
 		"@sveltejs/adapter-auto": "latest",
 		"@sveltejs/kit": "@sveltejs/kit@latest",
 		"eslint": "^7.32.0",
@@ -23,7 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^1.0.0-next.68",
-		"vite@latest": "vite@latest",
-		"svelte-seo": "^1.4.1"
+		"svelte-seo": "^1.4.1",
+		"vite@latest": "vite@latest"
 	}
 }

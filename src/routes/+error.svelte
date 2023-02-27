@@ -10,12 +10,9 @@
 </svelte:head>
 <body>
 	<main>
-		<Top logoOnly={false}/>
+		<Top logoOnly={true}/>
 		<div class="main">
 			<h4><b>{$page.status}</b> | {$page.error.message}</h4>
-			<br />
-			<p>Looks like something went wrong, don't worry though! You can still find your way back home by clicking below!</p>
-			<br />
 		</div>
 		<div class="larr">
 			<a href="/">&larr; Head home?</a>
