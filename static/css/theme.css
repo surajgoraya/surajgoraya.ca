@@ -36,6 +36,31 @@ p {
 	font-weight: 300;
 }
 
+.mini_headings {
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.publish_time {
+	padding: 2rem 0rem;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-top: -0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.subtitle {
+	margin-top: -.5rem;
+	letter-spacing: .8px;
+}
+
+.subtitle > i {
+	font-size: 80%;
+	margin-left: 0.5rem;
+	margin-right: 0.2rem;
+}
 
 .muted {
 	opacity: 0.7;

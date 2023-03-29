@@ -95,30 +95,7 @@
 </body>
 
 <style>
-	.subtitle {
-		margin-top: -.5rem;
-		letter-spacing: .8px;
-	}
-	.subtitle > i {
-		font-size: 80%;
-		margin-left: 0.5rem;
-		margin-right: 0.2rem;
-	}
-	.mini_headings {
-		font-size: 0.9em;
-		font-weight: bold;
-	}
-	.publish_time {
-		padding: 2rem 0rem;
-		/* background-color: aliceblue; */
-		width: 100%;
-		text-transform: uppercase;
-		font-size: 0.8em;
-		font-weight: bold;
-		margin-top: -0.5rem;
-		margin-bottom: 0.5rem;
-	}
-
+	
 	.downloads {
 		margin-top: 1em;
 		padding: 0rem 0;
@@ -127,14 +104,4 @@
 		flex-direction: column;
 		margin-bottom: -1rem;
 	}
-	/* .downloads > a {
-        padding: 1rem 1rem;
-        margin: 1rem 0;
-        background-color: var(--colour-bg-alt);
-    }
-    .downloads > a:hover{
-        border-bottom: none;
-        color: var(--colour-bg);
-        background-color: var(--colour-blossom);
-    } */
 </style>
