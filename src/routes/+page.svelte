@@ -3,6 +3,9 @@
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
 	import SvelteSEO from 'svelte-seo';
+ import Special from '$lib/Components/Special.svelte';
+	/** @type {import('./$types').PageData} */
+	export let data;
 </script>
 
 <SvelteSEO
@@ -27,7 +30,8 @@
 	twitter={{
 		site: '@surajgoraya',
 		title: 'suraj goraya - home',
-		description: 'Fifth year Computer Science student coding things & making music.',
+		description:
+			'Fifth year Computer Science student coding things & making music.',
 		url: 'https://surajgoraya.ca/perma/cover.jpg',
 		imageAlt: 'A black and white picture of Suraj, standing looking down',
 	}}
@@ -36,7 +40,11 @@
 <body
 	in:fly={{ y: -50, duration: 250, delay: 300 }}
 	out:fly={{ y: -50, duration: 250 }}
->
+>	
+	{#if data.special}
+		<Special message={data.message}/>	
+	{/if}
+	
 	<Top logoOnly={false} />
 	<main>
 		<blockquote>
