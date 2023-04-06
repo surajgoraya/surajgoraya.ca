@@ -2,6 +2,7 @@
 export async function load({request}){
     console.log(request.headers)
     const IP_ADDR = request.headers['x-forwarded-for'];
+    console.log(IP_ADDR)
     /**
      * Accurate as of https://ocul.on.ca/ip-addresses
      */
