@@ -3,9 +3,11 @@
 </script>
 
 <div role="banner" class="special__banner">
-	<p class="special__banner--text">
-		{message ? message : 'No message provided'}
-	</p>
+	<blockquote>
+		<p class="special__banner--text">
+			{message ? message : 'No message provided'}
+		</p>
+	</blockquote>
 </div>
 
 <style>
@@ -13,7 +15,7 @@
 		background-color: var(--colour-bg-alt);
         color: var(--colour-text);
 		min-width: 100%;
-		margin: -2.5rem 0 0 0;
+		margin: -3.5rem 0 0 0;
 	}
 	.special__banner--text {
         font-size: 1.5rem;

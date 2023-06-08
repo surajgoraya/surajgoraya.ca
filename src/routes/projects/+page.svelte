@@ -3,6 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
 	import SvelteSeo from 'svelte-seo';
+	import Template from '$lib/Components/Template.svelte';
 </script>
 
 <SvelteSeo
@@ -32,44 +33,37 @@
 	}}
 />
 
-<body
-	in:fly={{ y: -50, duration: 250, delay: 300 }}
-	out:fly={{ y: -50, duration: 250 }}
->
-	<Top />
-	<main>
-		<h1 class="top-highlight">PROJECTS</h1>
-		<h2 class="h1">Programming Projects</h2>
-		<h5 class="h2 subtitle">
-			<i class="bi bi-arrow-return-right" />mostly dumb<i
-				class="bi bi-arrow-right-circle"
-			/> sometimes useful
-		</h5>
-		<p>
-			A small (and incomplete) list of all the dumb side projects I've done on my
-			GitHub and here:
-		</p>
-		<ul>
-			<li>
-				<a href="https://aot.surajgoraya.ca">Has Interframe Watched AOT Today?</a>
-			</li>
-			<li>
-				<a href="https://hey.surajgoraya.ca">"Hey"</a> - a linkree clone, but for me
-			</li>
-			<li><a href="https://gravatarlookup.vercel.app">Gravatar Lookup app</a></li>
-			<li>
-				<a href="https://github.com/surajgoraya/PageTrack">PageTrack </a> - utility allows
-				for people to watch for changes & notifies them
-			</li>
-			<li>
-				<a href="https://github.com/surajgoraya/naal">naal</a> - (ਨਾਲ [nāl] - meaning
-				"with") self-hosted short-link service
-			</li>
-		</ul>
-		<p>Check up <a href="https://github.com/surajgoraya">GitHub</a> for more</p>
-	</main>
-	<Footer />
-</body>
+<Template>
+	<h1 class="top-highlight">PROJECTS</h1>
+	<h2 class="h1">Programming Projects</h2>
+	<h5 class="h2 subtitle">
+		<i class="bi bi-arrow-return-right" />mostly dumb<i
+			class="bi bi-arrow-right-circle"
+		/> sometimes useful
+	</h5>
+	<p>
+		A small (and incomplete) list of all the dumb side projects I've done on my
+		GitHub and here:
+	</p>
+	<ul>
+		<li>
+			<a href="https://aot.surajgoraya.ca">Has Interframe Watched AOT Today?</a>
+		</li>
+		<li>
+			<a href="https://hey.surajgoraya.ca">"Hey"</a> - a linkree clone, but for me
+		</li>
+		<li><a href="https://gravatarlookup.vercel.app">Gravatar Lookup app</a></li>
+		<li>
+			<a href="https://github.com/surajgoraya/PageTrack">PageTrack </a> - utility allows
+			for people to watch for changes & notifies them
+		</li>
+		<li>
+			<a href="https://github.com/surajgoraya/naal">naal</a> - (ਨਾਲ [nāl] - meaning
+			"with") self-hosted short-link service
+		</li>
+	</ul>
+	<p>Check up <a href="https://github.com/surajgoraya">GitHub</a> for more</p>
+</Template>
 
 <style>
 	.subtitle {
