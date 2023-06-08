@@ -17,10 +17,10 @@
 	.branding {
 		z-index: 3;
 		margin: 2rem 0 2rem 0rem;
-        height: auto;
-        width: 6em;
+		height: auto;
+		width: 6em;
 	}
-	
+
 	.branding__logoType {
 		fill: var(--colour-text);
 	}

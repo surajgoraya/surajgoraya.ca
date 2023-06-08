@@ -14,7 +14,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		/* --colour-fade: hsl(355, 52%, 42%); */
-		--colour-fade:  hsla(273, 100%, 63%, 0.817);
+		--colour-fade: hsla(273, 100%, 63%, 0.817);
 		/* --colour-blossom: hsl(23, 100%, 63%); */
 		--colour-blossom: hsl(273, 100%, 63%);
 		--colour-text: hsl(0, 0%, 100%);
@@ -24,8 +24,11 @@
 	}
 }
 
-html, body {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Segoe UI', sans-serif;
+html,
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+		'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Segoe UI',
+		sans-serif;
 }
 
 h5 {
@@ -64,7 +67,7 @@ header > #logo path {
 	font-weight: 200;
 }
 .top-highlight {
-	font-size: 2.0rem;
+	font-size: 2rem;
 	margin-bottom: -1.5rem;
 	font-family: 'forma-djr-banner', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -76,7 +79,6 @@ header > #logo path {
 	font-size: 0.9em;
 	display: flex;
 }
-
 
 .mini_headings {
 	font-size: 0.9em;
@@ -94,8 +96,8 @@ header > #logo path {
 }
 
 .subtitle {
-	margin-top: -.5rem;
-	letter-spacing: .8px;
+	margin-top: -0.5rem;
+	letter-spacing: 0.8px;
 }
 
 .subtitle > i {

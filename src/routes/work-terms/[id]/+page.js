@@ -6,6 +6,6 @@ export async function load({ params }) {
 	if (params.id === '3') {
 		throw redirect(301, '/archived');
 	} else {
-		throw error(404, {message: 'Not Found'});
+		throw error(404, { message: 'Not Found' });
 	}
 }

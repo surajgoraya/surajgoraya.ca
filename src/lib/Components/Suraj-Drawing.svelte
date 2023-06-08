@@ -67,7 +67,6 @@
 </div>
 
 <style>
-	
 	/* .logo-outer {
 		border-radius: 10%;
 		background-color: var(--colour-bg);
@@ -82,7 +81,6 @@
 	#logo-svg polyline,
 	#logo-svg line {
 		stroke: var(--colour-text) !important;
-		
 	}
 	#logo-svg {
 		z-index: 3;

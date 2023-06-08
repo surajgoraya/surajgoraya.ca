@@ -35,7 +35,7 @@
 	}}
 />
 {#if data.special}
-	<Special message={data.message}/>	
+	<Special message={data.message} />
 {/if}
 <Template>
 	<blockquote>

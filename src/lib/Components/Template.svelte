@@ -2,7 +2,7 @@
 	import Footer from './Footer.svelte';
 	import { fly, blur, fade } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
-	
+
 	//TODO: Allow for logoOnly to be specified by caller, as well as noFooter.
 </script>
 

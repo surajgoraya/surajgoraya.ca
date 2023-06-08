@@ -3,18 +3,19 @@
 	import Top from '$lib/Components/Top.svelte';
 </script>
 
-
-
 <svelte:head>
 	<title>{`suraj goraya | ${$page.error.message.toLocaleLowerCase()}`}</title>
 </svelte:head>
 <body>
 	<main>
-		<Top logoOnly={false}/>
+		<Top logoOnly={false} />
 		<div class="main">
 			<h4><b>{$page.status}</b> | {$page.error.message}</h4>
 			<br />
-			<p>Looks like something went wrong, don't worry though! You can still find your way back home by clicking below!</p>
+			<p>
+				Looks like something went wrong, don't worry though! You can still find your
+				way back home by clicking below!
+			</p>
 			<br />
 		</div>
 		<div class="larr">
@@ -24,7 +25,7 @@
 </body>
 
 <style>
-	h4{
+	h4 {
 		font-weight: 300;
 	}
 	div.main {

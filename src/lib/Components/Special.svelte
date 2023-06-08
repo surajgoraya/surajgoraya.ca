@@ -13,12 +13,12 @@
 <style>
 	.special__banner {
 		background-color: var(--colour-bg-alt);
-        color: var(--colour-text);
+		color: var(--colour-text);
 		min-width: 100%;
 		margin: -3.5rem 0 0 0;
 	}
 	.special__banner--text {
-        font-size: 1.5rem;
+		font-size: 1.5rem;
 		padding: 1rem;
 	}
 </style>
