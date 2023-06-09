@@ -15,8 +15,6 @@
 		author,
 		permalink,
 	} = metadata;
-
-	console.log(description);
 </script>
 
 <MetaTags

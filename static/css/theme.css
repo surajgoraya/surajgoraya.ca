@@ -2,6 +2,19 @@
 /*alt 1: https://coolors.co/009fb7-2a2d34-fff7f8-b23a48-36393b */
 /*alt3: https://coolors.co/1e1e24-ff101f-fff8f0-4f759b-00a7e1 */
 /*alt4: https://coolors.co/ff8c42-a3333d-232c33-ffffff */
+
+/* :root {
+	--colour-fade: hsl(349, 83%, 61%);
+	--colour-blossom: hsl(224, 24%, 57%); accessible below
+	--colour-blossom: hsl(254.2, 43.2%, 57.1%);
+	--colour-bg-alt:hsl(353 30% 95% / 1);
+	--colour-bg:hsl(0, 0%, 100%);
+	--colour-bg-alt: hsl(353, 100%, 98%);
+	--colour-text: hsl(204, 4%, 22%);
+	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+} */
+
+
 :root {
 	--colour-blossom: hsl(355, 52%, 42%);
 	--colour-fade: hsl(23, 100%, 63%);
@@ -37,6 +50,10 @@ h5 {
 
 p {
 	font-weight: 300;
+}
+
+a {
+	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
 }
 
 blockquote {

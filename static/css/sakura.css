@@ -95,7 +95,7 @@ a {
 	color: var(--colour-blossom);
 }
 
-a:hover {
+a:hover, a:focus {
 	color: var(--colour-fade);
 	border-bottom: 2px solid var(--colour-text);
 }

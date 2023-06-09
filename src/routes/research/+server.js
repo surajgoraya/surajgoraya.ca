@@ -1,7 +1,6 @@
 /**
  * Temporary redirect before other research is published here.
  */
-
 import { error, redirect } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */

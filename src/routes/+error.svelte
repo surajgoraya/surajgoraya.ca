@@ -19,7 +19,7 @@
 			<br />
 		</div>
 		<div class="larr">
-			<a href="/">&larr; Head home?</a>
+			<a href="/"><i class="bi bi-arrow-left-circle-fill"></i> Head home?</a>
 		</div>
 	</main>
 </body>

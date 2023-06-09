@@ -48,6 +48,7 @@
 			class="main__hamburger"
 			class:visible={clickedOnBurger}
 			on:click={burgerToggle}
+			on:keydown={burgerToggle}
 		>
 			<span class="bar" />
 			<span class="bar" />
