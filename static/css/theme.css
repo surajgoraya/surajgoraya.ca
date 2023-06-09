@@ -90,7 +90,7 @@ header > #logo path {
 	width: 100%;
 	text-transform: uppercase;
 	font-size: 0.8em;
-	font-weight: bold;
+	font-weight: 500;
 	margin-top: -0.5rem;
 	margin-bottom: 0.5rem;
 }
