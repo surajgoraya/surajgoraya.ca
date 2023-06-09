@@ -15,11 +15,13 @@
 		author,
 		permalink,
 	} = metadata;
+
+	console.log(description);
 </script>
 
 <MetaTags
 	title={`${meta_title}`}
-	{description}
+	description={description}
 	additionalMetaTags={[
 		{
 			name: 'keywords',
@@ -32,7 +34,7 @@
 	]}
 	openGraph={{
 		title: title,
-		description: { description },
+		description: description,
 		url: `https://surajgoraya.ca/${type}/${permalink}`,
 		type: 'website',
 		images: [
