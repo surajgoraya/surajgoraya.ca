@@ -43,7 +43,7 @@
 			>Midnight (dog)</em
 		>
 	</blockquote>
-	<h6 class="h1"><em>Right, so, uh. Who are you?</em></h6>
+	<h1 class="h6"><em>Right, so, uh. Who are you?</em></h1>
 	<p>
 		I'm a Computer Science Masters student, <a href="/research/ds-and-gov"
 			>with an interest in UI/UX, HCI</a

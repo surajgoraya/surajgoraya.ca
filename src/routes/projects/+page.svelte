@@ -36,11 +36,11 @@
 <Template>
 	<h1 class="top-highlight">PROJECTS</h1>
 	<h2 class="h1">Programming Projects</h2>
-	<h5 class="h2 subtitle">
+	<h3 class="h5 subtitle">
 		<i class="bi bi-arrow-return-right" />mostly dumb<i
 			class="bi bi-arrow-right-circle"
 		/> sometimes useful
-	</h5>
+	</h3>
 	<p>
 		A small (and incomplete) list of all the dumb side projects I've done on my
 		GitHub and here:

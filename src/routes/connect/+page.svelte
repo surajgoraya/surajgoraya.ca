@@ -57,11 +57,11 @@
 />
 
 <Template>
-	<h2 class="h1">connect</h2>
-	<h5 class="h2 subtitle">
+	<h1 class="h1">connect</h1>
+	<h2 class="h5 subtitle">
 		<i class="bi bi-arrow-return-right" /> twitter is dying
 		<i class="bi bi-arrow-right-circle" /> other socials
-	</h5>
+	</h2>
 	<p>Personal socials below:</p>
 	<ul>
 		<li>

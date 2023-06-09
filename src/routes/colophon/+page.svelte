@@ -11,13 +11,13 @@
 </svelte:head>
 
 <Template>
-	<h2 class="h1">colophon</h2>
-	<h5 class="h2 subtitle">
+	<h1 class="h1">colophon</h1>
+	<h2 class="h5 subtitle">
 		<i class="bi bi-arrow-return-right" /> how it's made
-	</h5>
-	<h6 class="h2 publish_time">
+	</h2>
+	<h3 class="h6 publish_time">
 		<i class="bi bi-clock-history" /> &nbsp; LAST UPDATED JUNE 2022
-	</h6>
+	</h3>
 	<p>
 		This site is made using <a href="https://svelte.dev/" target="_blank"
 			>SvelteKit</a
