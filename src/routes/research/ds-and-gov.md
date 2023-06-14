@@ -2,7 +2,7 @@
 title: Design Systems and Government
 type: research
 filed_under: ['undergraduate', 'design systems']
-published: "2022-05-27 12:36:29 -5:00"
+published: "2022-05-27T12:36z"
 meta_title: suraj goraya - research
 description: During my final year at University I was able to take a course which let undergraduate students explore their own independent computer science project, this resulted in a cursory look into design systems and their use in e-Government initiatives.
 keywords: Design Systems, e-Government, Government of Canada, Government of the United Kingdom, undergraduate research, Canadian Digital Service, Government Digital Service, University of Guelph
