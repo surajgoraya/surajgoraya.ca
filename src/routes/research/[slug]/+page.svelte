@@ -1,6 +1,7 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
 	import Template from '$lib/Components/Template.svelte';
+ import { PhulkariDateFormat } from '$lib/utils/common.js';
 	import { MetaTags } from 'svelte-meta-tags';
 	export let data;
 	const { content, metadata } = data;
@@ -80,7 +81,7 @@
 		</hgroup>
 		<svelte:component this={content} />
 		<p class="h2 publish_time subtitle">
-			<i class="bi bi-clock-fill" /> ORIGINALLY PUBLISHED {new Date(published).toLocaleDateString('en-CA')}
+			<i class="bi bi-clock-fill" /> ORIGINALLY PUBLISHED {PhulkariDateFormat(published)}
 		</p>
 	</article>
 
