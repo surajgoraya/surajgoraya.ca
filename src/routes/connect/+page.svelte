@@ -8,7 +8,7 @@
 	const HAS_BEEN_UPDATED = true;
 
 	const PUBLISH_TIME = 'NOVEMBER 2022';
-	const LAST_UPDATE = 'JANUARY 2023';
+	const LAST_UPDATE = 'JULY 2023';
 
 	let switchPublish = false;
 
@@ -67,6 +67,10 @@
 		<li>
 			<i class="bi bi-instagram" />&nbsp;Instagram:
 			<a href="https://instagram.com/surajgoraya"> @surajgoraya</a>
+		</li>
+		<li>
+			<i class="bi bi-at" />&nbsp;Bluesky:
+			<a href="https://bsky.app/profile/surajgoraya.ca"> @surajgoraya.ca</a>
 		</li>
 		<!-- <li><i class="bi bi-discord"></i>&nbsp;Discord: <code>Interframe#5477</code></li> -->
 		<!-- <li>Hive: <code>@surajgoraya</code></li> -->
