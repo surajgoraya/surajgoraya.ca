@@ -64,13 +64,14 @@
 	</h2>
 	<p>Personal socials below:</p>
 	<ul>
+		<!-- <li> -->
+			<!-- <i class="bi si-threads" />&nbsp;Threads: -->
+			<!-- URL is unknown for now, -->
+			<!-- <a href="https://threads.net/surajgoraya"> @surajgoraya</a> -->
+		<!-- </li> -->
 		<li>
 			<i class="bi bi-instagram" />&nbsp;Instagram:
 			<a href="https://instagram.com/surajgoraya"> @surajgoraya</a>
-		</li>
-		<li>
-			<i class="bi bi-at" />&nbsp;Bluesky:
-			<a href="https://bsky.app/profile/surajgoraya.ca"> @surajgoraya.ca</a>
 		</li>
 		<!-- <li><i class="bi bi-discord"></i>&nbsp;Discord: <code>Interframe#5477</code></li> -->
 		<!-- <li>Hive: <code>@surajgoraya</code></li> -->
@@ -78,6 +79,10 @@
 		<li>
 			<i class="bi bi-envelope" />&nbsp;Email:
 			<a href="mailto:hello@surajgoraya.ca">hello@surajgoraya.ca</a>
+		</li>
+		<li>
+			<i class="bi bi-at" />&nbsp;Bluesky:
+			<a href="https://bsky.app/profile/surajgoraya.ca"> @surajgoraya.ca</a>
 		</li>
 		<li>
 			<i class="bi bi-github" />&nbsp;GitHub:
@@ -118,6 +123,20 @@
 </Template>
 
 <style>
+	/**
+	* Manual implementation of the Instagram "Threads" logo
+	* vectorized via the favicon on https://threads.net. 
+	*
+	* implemented the icon close to how other Bootstrap Icons
+	* are, however this icon is visibly thicker.
+	*/
+	.si-threads::before {
+		content: url('assets/icons/suraj-threads-logo.svg');
+		height: 1em;
+		width: 1em;
+		transform: translate(0, 5%);
+		/* padding: 1 0 0 0; */
+	}
 	.hint {
 		display: inline-block;
 		font-size: 1.5rem;
