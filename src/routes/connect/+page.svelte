@@ -130,7 +130,7 @@
 	* are, however this icon is visibly thicker.
 	*/
 	.si-threads::before {
-		content: url('assets/icons/suraj-threads-logo.svg');
+		content: url('/assets/icons/suraj-threads-logo.svg');
 		height: 1em;
 		width: 1em;
 		transform: translate(0, 5%);
