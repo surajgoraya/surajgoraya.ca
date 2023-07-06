@@ -64,11 +64,10 @@
 	</h2>
 	<p>Personal socials below:</p>
 	<ul>
-		<!-- <li> -->
-			<!-- <i class="bi si-threads" />&nbsp;Threads: -->
-			<!-- URL is unknown for now, -->
-			<!-- <a href="https://threads.net/surajgoraya"> @surajgoraya</a> -->
-		<!-- </li> -->
+		<li>
+			<i class="bi si-threads" />&nbsp;Threads:
+			<a href="https://threads.net/@surajgoraya"> @surajgoraya</a>
+		</li>
 		<li>
 			<i class="bi bi-instagram" />&nbsp;Instagram:
 			<a href="https://instagram.com/surajgoraya"> @surajgoraya</a>
