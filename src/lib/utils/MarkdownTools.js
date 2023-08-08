@@ -12,7 +12,8 @@ async function MarkdownPageLoad(importPath) {
         if (exception.message.includes('Unknown variable dynamic import')) {
             throw error(404, 'Not Found');
         } else {
-            throw error(500, '👁️👄👁️');
+            throw error(500, 'Something went wrong when processing your request. Please try again later');
+            //TODO: Log this? Seems pretty serious if this happens.
         }
     }
 }

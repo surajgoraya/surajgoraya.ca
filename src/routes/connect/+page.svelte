@@ -112,7 +112,7 @@
 	<h6 class="h2 publish_time">
 		<i class={switchPublish ? 'bi bi-clock-fill' : 'bi bi-clock-history'} />
 		&nbsp;
-		<!-- svelte-ignore a11y-click-events-have-key-events -->
+
 		<abbr title={pub_time_rev} on:click={() => (switchPublish = !switchPublish)}
 			>{pub_time_meta}</abbr
 		>
