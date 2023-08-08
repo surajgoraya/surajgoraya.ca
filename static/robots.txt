@@ -1,0 +1,4 @@
+# Disallow ChatGPT bot.
+
+User-agent: GPTBot
+Disallow: /
