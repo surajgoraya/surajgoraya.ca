@@ -13,7 +13,7 @@ export async function load({ request }) {
 		return {
 			special: true,
 			message:
-				"Looks like you're accessing this site form the University of Guelph ❤️. Welcome fellow Gryphon.",
+				"Looks like you're accessing this site from the University of Guelph ❤️. Welcome fellow Gryphon.",
 		};
 	} else {
 		return { special: false };
