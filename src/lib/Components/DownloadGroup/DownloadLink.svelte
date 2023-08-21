@@ -12,7 +12,9 @@
 
 <style>
 	.downloads__downloadLink {
-		width: max-content;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+  		overflow: hidden;
 	}
 	.downloads__downloadLink:hover{
 		border: none;

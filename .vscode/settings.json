@@ -1,6 +1,7 @@
 {
     "conventionalCommits.scopes": [
         "connect",
-        "all"
+        "all",
+        "research"
     ]
 }

@@ -1,7 +1,7 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
 	import Template from '$lib/Components/Template.svelte';
- import { PhulkariDateFormat } from '$lib/utils/common.js';
+	import { date_format } from '$lib/utils/common.js';
 	import { MetaTags } from 'svelte-meta-tags';
 	export let data;
 	const { content, metadata } = data;
@@ -20,7 +20,7 @@
 
 <MetaTags
 	title={`${meta_title}`}
-	description={description}
+	{description}
 	additionalMetaTags={[
 		{
 			name: 'keywords',
@@ -28,8 +28,8 @@
 		},
 		{
 			name: 'author',
-			content: author
-		}
+			content: author,
+		},
 	]}
 	openGraph={{
 		title: title,
@@ -77,17 +77,20 @@
 					{/each}
 				</p>
 			{/if}
-			
 		</hgroup>
+
 		<svelte:component this={content} />
+
 		<p class="h2 publish_time subtitle">
-			<i class="bi bi-clock-fill" /> ORIGINALLY PUBLISHED {PhulkariDateFormat(published)}
+			<i class="bi bi-clock-fill" /> PUBLISHED {date_format(published)}
 		</p>
 	</article>
-
 </Template>
 
 <style>
+	article {
+		overflow-x: hidden;
+	}
 	/* .directory-tree {
 		font-weight: 700;
 		font-size: 1.4rem;
