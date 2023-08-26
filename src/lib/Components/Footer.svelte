@@ -5,7 +5,9 @@
 
 <footer>
 	<div class="footer">
-		<div class="muted logo"><SurajDrawing /></div>
+		<div class="muted logo">
+			<a href="/colophon"><abbr title="colophon"><SurajDrawing /></abbr></a>
+		</div>
 		<p class="muted">
 			&copy; suraj goraya {current_year}
 		</p>
