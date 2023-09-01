@@ -24,6 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"dayjs": "^1.11.8",
+		"firebase": "^10.3.0",
 		"marked": "^5.0.4",
 		"svelte-seo": "^1.4.1",
 		"vite": "^4.3.9"

@@ -10,7 +10,7 @@
 	<meta name="description" content="Colophon - surajgoraya.ca" />
 </svelte:head>
 
-<Template>
+<Template noFooter={true}>
 	<h1 class="h1">colophon</h1>
 	<h2 class="h5 subtitle">
 		<i class="bi bi-arrow-return-right" /> how it's made
