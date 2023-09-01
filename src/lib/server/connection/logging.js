@@ -6,6 +6,9 @@ import { collection, doc, getDoc, setDoc } from "firebase/firestore";
 import { LoginIntoBackend, firebase_db } from './common';
 
 const _METRICS_DB_NAME = 'metrics';
+/**
+ * @type {import('firebase/auth').User}
+ */
 let BACKEND_USER = null;
 
 /**
@@ -24,7 +27,8 @@ async function LogTraffic(referringHeader, userAgentHeader, ipAddress) {
         time: new Date().toISOString(),
         referring_from: referringHeader,
         user_agent: userAgentHeader, 
-        ip_address: ipAddress
+        ip_address: ipAddress,
+        created_by: BACKEND_USER.email
     });
 }
 
