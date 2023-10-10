@@ -14,12 +14,15 @@ export async function load({ request }) {
 	const REFERRING_FROM = request.headers.get('Referer');
 	const USER_AGENT = request.headers.get('User-Agent');
 
+	/**
+	 * @deprecated * 10-10-2023 -- Temp disable due to high amounts of reads/writes.
+	 * 
 	await LogTraffic(
 		REFERRING_FROM ? REFERRING_FROM : 'N/A',
 		USER_AGENT ? USER_AGENT : 'N/A',
 		IP_ADDR ? IP_ADDR : 'N/A'
 	);
-
+ 	**/
 	if (IP_ADDR && IP_ADDR.startsWith('131.104.')) {
 		return {
 			special: true,

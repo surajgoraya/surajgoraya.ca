@@ -1,8 +1,4 @@
-import { env } from '$env/dynamic/private';
-import { app } from './backend.config';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { collection, doc, getDoc, setDoc } from "firebase/firestore"; 
-
+import { collection, doc, setDoc } from "firebase/firestore"; 
 import { LoginIntoBackend, firebase_db } from './common';
 
 const _METRICS_DB_NAME = 'metrics';
