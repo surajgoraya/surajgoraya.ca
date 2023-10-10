@@ -1,10 +1,8 @@
 Contact: mailto:security@surajgoraya.ca
 
-Expires: 2024-01-01T05:35:00.000Z
-
-# Note: English and Punjabi are both preferred,
+#Note: While English and Punjabi are both preferred - however replies will be in en (English).
 Preferred-Languages: en, pa
 
 Canonical: https://surajgoraya.ca/.well-known/security.txt
-
 Canonical: https://surajgoraya.ca/security.txt
+Expires: 2024-01-01T05:35:00.000Z
