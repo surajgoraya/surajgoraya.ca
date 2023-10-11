@@ -2,6 +2,7 @@
 /*alt 1: https://coolors.co/009fb7-2a2d34-fff7f8-b23a48-36393b */
 /*alt3: https://coolors.co/1e1e24-ff101f-fff8f0-4f759b-00a7e1 */
 /*alt4: https://coolors.co/ff8c42-a3333d-232c33-ffffff */
+/*alt4: https://coolors.co/ee4967-2f2f2f-1f1f1f-f7f7f2-0eb1d2-489fb5*/
 
 /* :root {
 	--colour-fade: hsl(349, 83%, 61%);
@@ -26,15 +27,24 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		/* --colour-fade: hsl(355, 52%, 42%); */
+		--colour-fade: hsla(349, 83%, 61%, 0.817);
+		--colour-blossom: hsl(349, 83%, 61%);
+		--colour-text: hsl(60, 24%, 96%);
+		--colour-bg-alt: hsl(0, 0%, 18%);
+		--colour-bg: hsl(0, 0%, 12%);
+		--colour-visited: hsl(190, 87%, 44%);
+	}
+
+	/*
+	old dark theme. 
+	:root {
 		--colour-fade: hsla(273, 100%, 63%, 0.817);
-		/* --colour-blossom: hsl(23, 100%, 63%); */
 		--colour-blossom: hsl(273, 100%, 63%);
 		--colour-text: hsl(0, 0%, 100%);
 		--colour-bg: rgb(26, 26, 26);
 		--colour-bg-alt: rgb(46, 42, 42);
 		--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
-	}
+	} */
 }
 
 html,
