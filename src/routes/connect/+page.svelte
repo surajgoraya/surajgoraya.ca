@@ -62,7 +62,7 @@
 	<p>Personal socials below:</p>
 	<ul>
 		<li>
-			<i class="bi si-threads" />&nbsp;Threads:
+			<i class="bi bi-threads" />&nbsp;Threads:
 			<a href="https://threads.net/@surajgoraya"> @surajgoraya</a>
 		</li>
 		<li>
@@ -127,13 +127,13 @@
 	* implemented the icon close to how other Bootstrap Icons
 	* are, however this icon is visibly thicker.
 	*/
-	.si-threads::before {
+	/* .si-threads::before {
 		content: url('/assets/icons/suraj-threads-logo.svg');
 		height: 1em;
 		width: 1em;
 		transform: translate(0, 5%);
-		/* padding: 1 0 0 0; */
-	}
+	} */
+	
 	.hint {
 		display: inline-block;
 		font-size: 1.5rem;
