@@ -14,8 +14,8 @@
 	--colour-text: hsl(204, 4%, 22%);
 	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 } */
-
-
+/* 
+Deprecated light theme. - V2
 :root {
 	--colour-blossom: hsl(355, 52%, 42%);
 	--colour-fade: hsl(23, 100%, 63%);
@@ -23,9 +23,19 @@
 	--colour-text: hsl(206, 19%, 17%);
 	--colour-bg-alt: hsl(0deg 0% 96%);
 	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+} */
+
+:root {
+	--colour-fade: hsla(349, 83%, 61%, 0.817);
+	--colour-blossom: hsl(349, 83%, 61%);
+	--colour-bg: hsl(353 30% 100% / 1);
+	--colour-bg-alt: hsl(353 170% 97% / 1);
+	--colour-text: hsl(0, 0%, 18%);
+	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
 }
 
 @media (prefers-color-scheme: dark) {
+
 	:root {
 		--colour-fade: hsla(349, 83%, 61%, 0.817);
 		--colour-blossom: hsl(349, 83%, 61%);
@@ -75,24 +85,27 @@ body {
 		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-header > #logo line,
-header > #logo polyline,
-header > #logo path {
+header>#logo line,
+header>#logo polyline,
+header>#logo path {
 	stroke: var(--colour-text) !important;
 }
 
-.h1, .h6 {
+.h1,
+.h6 {
 	font-family: 'forma-djr-banner', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 700;
 	color: var(--colour-text) !important;
 }
 
-.h2, .h5{
+.h2,
+.h5 {
 	font-family: 'forma-djr-banner', -apple-system, BlinkMacSystemFont, 'Segoe UI',
 		Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	font-weight: 200;
 }
+
 .top-highlight {
 	font-size: 2rem;
 	margin-bottom: -1.5rem;
@@ -127,7 +140,7 @@ header > #logo path {
 	letter-spacing: 0.8px;
 }
 
-.subtitle > i {
+.subtitle>i {
 	font-size: 80%;
 	margin-left: 0.5rem;
 	margin-right: 0.2rem;
