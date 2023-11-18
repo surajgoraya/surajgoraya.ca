@@ -47,14 +47,4 @@
 		margin-left: 0.5rem;
 		margin-right: 0.2rem;
 	}
-	.publish_time {
-		padding: 1rem 0rem;
-		/* background-color: aliceblue; */
-		width: 100%;
-		text-transform: uppercase;
-		font-size: 0.8em;
-		font-weight: bold;
-		margin-top: -0.5rem;
-		margin-bottom: 0.5rem;
-	}
 </style>

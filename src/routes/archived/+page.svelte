@@ -1,11 +1,9 @@
 <script>
 	import Template from '$lib/Components/Template.svelte';
-	import Top from '$lib/Components/Top.svelte';
 </script>
 
 <svelte:head>
 	<title>suraj goraya - archived</title>
-
 	<!--likely don't want this indexed since it's more of a utility page than a page we want google to index.-->
 	<meta name="robots" content="noindex" />
 </svelte:head>

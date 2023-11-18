@@ -1,7 +1,4 @@
 <script>
-	import Footer from '$lib/Components/Footer.svelte';
-	import { fly } from 'svelte/transition';
-	import Top from '$lib/Components/Top.svelte';
 	import SvelteSeo from 'svelte-seo';
 	import Template from '$lib/Components/Template.svelte';
 </script>
