@@ -28,24 +28,14 @@ Deprecated light theme. - V2
 :root {
 	--colour-fade: hsla(349, 83%, 61%, 0.817);
 	--colour-blossom: hsl(349, 83%, 61%);
-	--colour-bg: hsl(353 30% 100% / 1);
-	--colour-bg-alt: hsl(353 170% 97% / 1);
-	--colour-text: hsl(0, 0%, 18%);
-	--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
+	--colour-text: hsl(60, 24%, 96%);
+	--colour-bg-alt: hsl(0, 0%, 18%);
+	--colour-bg: hsl(0, 0%, 12%);
+	--colour-visited: hsl(190, 87%, 44%);
 }
 
-@media (prefers-color-scheme: dark) {
-
-	:root {
-		--colour-fade: hsla(349, 83%, 61%, 0.817);
-		--colour-blossom: hsl(349, 83%, 61%);
-		--colour-text: hsl(60, 24%, 96%);
-		--colour-bg-alt: hsl(0, 0%, 18%);
-		--colour-bg: hsl(0, 0%, 12%);
-		--colour-visited: hsl(190, 87%, 44%);
-	}
-
-	/*
+/* @media (prefers-color-scheme: dark) {
+	
 	old dark theme. 
 	:root {
 		--colour-fade: hsla(273, 100%, 63%, 0.817);
@@ -54,13 +44,13 @@ Deprecated light theme. - V2
 		--colour-bg: rgb(26, 26, 26);
 		--colour-bg-alt: rgb(46, 42, 42);
 		--colour-visited: hsl(from var(--colour-blossom) h s calc(l - 10%));
-	} */
-}
+	}
+} */
 
 html,
 body {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Inter',
-		'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Segoe UI',
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+		'Inter', 'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Segoe UI',
 		sans-serif;
 }
 
@@ -80,10 +70,9 @@ blockquote {
 	font-weight: 300;
 }
 
-
-header>#logo line,
-header>#logo polyline,
-header>#logo path {
+header > #logo line,
+header > #logo polyline,
+header > #logo path {
 	stroke: var(--colour-text) !important;
 }
 
@@ -136,7 +125,7 @@ header>#logo path {
 	letter-spacing: 0.8px;
 }
 
-.subtitle>i {
+.subtitle > i {
 	font-size: 80%;
 	margin-left: 0.5rem;
 	margin-right: 0.2rem;
