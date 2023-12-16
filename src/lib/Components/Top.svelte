@@ -39,7 +39,7 @@
 	});
 </script>
 
-<header>
+<nav>
 	<div class="h-container">
 		<Logo />
 	</div>
@@ -73,7 +73,7 @@
 			{/each}
 		</div>
 	{/if}
-</header>
+</nav>
 
 <style>
 	.main__hamburger {
@@ -96,7 +96,7 @@
 		transition: all 0.2 ease;
 		background-color: var(--colour-blossom);
 	}
-	header {
+	nav {
 		flex-direction: row;
 		display: flex;
 		align-items: center;

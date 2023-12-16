@@ -2,6 +2,7 @@
 	import Footer from './Footer.svelte';
 	import { fly, blur, fade } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
+	import SkipToMain from './SkipToMain.svelte';
 
 	/**
 	 * Show only a logo in the header, without the menu bar present
@@ -15,18 +16,29 @@
 	 */
 	let noFooter;
 
-	export {showLogoOnly, noFooter}
+	export { showLogoOnly, noFooter };
 </script>
 
-<body
+<!-- <SkipToMain /> -->
+<div
 	in:fly={{ y: -15, duration: 250, delay: 300 }}
 	out:fly={{ y: -15, duration: 250 }}
 >
 	<Top logoOnly={showLogoOnly ? showLogoOnly : false} />
-	<main in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 250 }}>
+	<main
+		in:fade={{ duration: 300, delay: 400 }}
+		out:fade={{ duration: 250 }}
+		id="content"
+	>
 		<slot />
 	</main>
 	{#if !noFooter}
 		<Footer />
 	{/if}
-</body>
+</div>
+
+<style>
+	div {
+		padding: 13px;
+	}
+</style>
