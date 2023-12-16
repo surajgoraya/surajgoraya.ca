@@ -56,12 +56,12 @@
 		</div>
 
 		{#if clickedOnBurger}
-			<div class="links-menu" class:visible={clickedOnBurger} in:fade out:fade>
+			<div class="links-menu" class:visible={clickedOnBurger} in:fade|global out:fade|global>
 				{#each MENU_LINKS as link, i}
 					<a
 						href={link.link}
 						class:active={match_path(link, url)}
-						in:fade={{ delay: (i + 1) * 300 }}>{link.name}</a
+						in:fade|global={{ delay: (i + 1) * 300 }}>{link.name}</a
 					>
 				{/each}
 			</div>

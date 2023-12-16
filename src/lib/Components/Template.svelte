@@ -21,13 +21,13 @@
 
 <!-- <SkipToMain /> -->
 <div
-	in:fly={{ y: -15, duration: 250, delay: 300 }}
-	out:fly={{ y: -15, duration: 250 }}
+	in:fly|global={{ y: -15, duration: 250, delay: 300 }}
+	out:fly|global={{ y: -15, duration: 250 }}
 >
 	<Top logoOnly={showLogoOnly ? showLogoOnly : false} />
 	<main
-		in:fade={{ duration: 300, delay: 400 }}
-		out:fade={{ duration: 250 }}
+		in:fade|global={{ duration: 300, delay: 400 }}
+		out:fade|global={{ duration: 250 }}
 		id="content"
 	>
 		<slot />
