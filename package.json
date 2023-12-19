@@ -11,22 +11,22 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/kit": "^2.0.4",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"mdsvex": "^0.10.6",
-		"prettier": "^2.4.1",
-		"prettier-plugin-svelte": "^2.10.1",
+		"mdsvex": "^0.11.0",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
 		"svelte": "^4.0.0",
-		"svelte-meta-tags": "^2.8.0"
+		"svelte-meta-tags": "^3.1.0"
 	},
 	"type": "module",
 	"dependencies": {
 		"dayjs": "^1.11.8",
 		"firebase": "^10.3.0",
-		"marked": "^5.0.4",
+		"marked": "^11.1.0",
 		"svelte-seo": "^1.4.1",
 		"vite": "^5.0.0"
 	}
