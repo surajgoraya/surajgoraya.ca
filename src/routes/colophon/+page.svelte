@@ -3,6 +3,7 @@
 	import { fly } from 'svelte/transition';
 	import Top from '$lib/Components/Top.svelte';
 	import Template from '$lib/Components/Template.svelte';
+	import PublishTime from '$lib/Components/PublishTime.svelte';
 </script>
 
 <svelte:head>
@@ -15,9 +16,10 @@
 	<h2 class="h5 subtitle">
 		<i class="bi bi-arrow-return-right" /> how it's made
 	</h2>
-	<h3 class="h6 publish_time">
+	<PublishTime PublishTime={'JUNE 2022'}/>
+	<!-- <h3 class="h6 publish_time">
 		<i class="bi bi-clock-history" /> &nbsp; LAST UPDATED JUNE 2022
-	</h3>
+	</h3> -->
 	<p>
 		This site is made using <a href="https://svelte.dev/" target="_blank"
 			>SvelteKit</a

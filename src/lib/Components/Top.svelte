@@ -47,6 +47,8 @@
 		<div
 			class="main__hamburger"
 			class:visible={clickedOnBurger}
+			role="button"
+			tabindex="0"
 			on:click={burgerToggle}
 			on:keydown={burgerToggle}
 		>
@@ -56,7 +58,12 @@
 		</div>
 
 		{#if clickedOnBurger}
-			<div class="links-menu" class:visible={clickedOnBurger} in:fade|global out:fade|global>
+			<div
+				class="links-menu"
+				class:visible={clickedOnBurger}
+				in:fade|global
+				out:fade|global
+			>
 				{#each MENU_LINKS as link, i}
 					<a
 						href={link.link}
@@ -83,7 +90,9 @@
 		cursor: pointer;
 	}
 	.main__hamburger .bar {
-		transition: transform 0.5s ease, opacity 0.5s ease;
+		transition:
+			transform 0.5s ease,
+			opacity 0.5s ease;
 	}
 	.main__hamburger:hover {
 		opacity: 0.75;
@@ -117,8 +126,18 @@
 		text-transform: uppercase;
 		font-size: 1.75rem;
 		/* letter-spacing: .5px; */
-		font-family: 'forma-djr-banner', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-			Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family:
+			'forma-djr-banner',
+			-apple-system,
+			BlinkMacSystemFont,
+			'Segoe UI',
+			Roboto,
+			Oxygen,
+			Ubuntu,
+			Cantarell,
+			'Open Sans',
+			'Helvetica Neue',
+			sans-serif;
 		font-weight: 600;
 		margin-right: 1em;
 	}
