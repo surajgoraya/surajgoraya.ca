@@ -1,8 +1,23 @@
-import { redirect } from '@sveltejs/kit';
+import { BAD_USER_AGENTS } from '$lib/config';
+import { error, redirect } from '@sveltejs/kit';
 
 /** @type {import('@sveltejs/kit').Handle} */
 export async function handle({ event, resolve }) {
+	const USER_AGENT = event.request.headers.get('User-Agent');
 	const PATH = event.url.pathname;
+
+	/**
+	 * Prevent some user agents from accessing the site. This does not stop
+	 * bad actors, however does eliminate some traffic to the site which does
+	 * nothing but scrape.
+	 *
+	 * @see https://stackoverflow.com/questions/57908900/what-is-the-bytespider-user-agent
+	 */
+	BAD_USER_AGENTS.forEach((agent) => {
+		if (USER_AGENT.toLocaleLowerCase().includes(agent.toLocaleLowerCase())) {
+			error(403, 'Forbidden');
+		}
+	});
 
 	switch (PATH) {
 		case '/security.txt':

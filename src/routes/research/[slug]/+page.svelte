@@ -1,5 +1,6 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
+	import PublishTime from '$lib/Components/PublishTime.svelte';
 	import Template from '$lib/Components/Template.svelte';
 	import { date_format } from '$lib/utils/common.js';
 	import { MetaTags } from 'svelte-meta-tags';
@@ -78,18 +79,22 @@
 				</p>
 			{/if}
 		</hgroup>
-
+		<div class="meta-information">
+			<PublishTime PublishTime={date_format(published)} />
+		</div>
 		<svelte:component this={content} />
-
-		<p class="h2 publish_time subtitle">
+		<!-- <p class="h2 publish_time subtitle">
 			<i class="bi bi-clock-fill" /> PUBLISHED {date_format(published)}
-		</p>
+		</p> -->
 	</article>
 </Template>
 
 <style>
 	article {
 		overflow-x: hidden;
+	}
+	.meta-information {
+		margin: -1rem auto 1rem auto;
 	}
 	/* .directory-tree {
 		font-weight: 700;

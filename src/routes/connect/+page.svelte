@@ -1,30 +1,11 @@
 <script>
 	import SvelteSEO from 'svelte-seo';
 	import Template from '$lib/Components/Template.svelte';
+	import PublishTime from '$lib/Components/PublishTime.svelte';
 
-	const HAS_BEEN_UPDATED = true;
+	const _PUBLISHED_ON = 'NOVEMBER 2022';
+	const _LAST_UPDATED_ON = 'JULY 2023';
 
-	const PUBLISH_TIME = 'NOVEMBER 2022';
-	const LAST_UPDATE = 'JULY 2023';
-
-	let switchPublish = false;
-
-	function renderLastUpdate(switchPublish) {
-		if (HAS_BEEN_UPDATED && switchPublish === false) {
-			return `LAST UPDATED ${LAST_UPDATE}`;
-		} else if (HAS_BEEN_UPDATED && switchPublish === true) {
-			return `PUBLISHED ${PUBLISH_TIME}`;
-		} else {
-			return `PUBLISHED ${PUBLISH_TIME}`;
-		}
-	}
-
-	$: pub_time_meta = switchPublish
-		? renderLastUpdate(true)
-		: renderLastUpdate(false);
-	$: pub_time_rev = switchPublish
-		? renderLastUpdate(false)
-		: renderLastUpdate(true);
 </script>
 
 <SvelteSEO
@@ -109,31 +90,15 @@
 		</i>
 	</p>
 	<br />
-	<h6 class="h2 publish_time">
-		<i class={switchPublish ? 'bi bi-clock-fill' : 'bi bi-clock-history'} />
-		&nbsp;
-
-		<abbr title={pub_time_rev} on:click={() => (switchPublish = !switchPublish)}
-			>{pub_time_meta}</abbr
-		>
-	</h6>
+	<div class="meta-information">
+		<PublishTime PublishTime={_PUBLISHED_ON} UpdateTime={_LAST_UPDATED_ON}/>
+	</div>
 </Template>
 
 <style>
-	/**
-	* Manual implementation of the Instagram "Threads" logo
-	* vectorized via the favicon on https://threads.net. 
-	*
-	* implemented the icon close to how other Bootstrap Icons
-	* are, however this icon is visibly thicker.
-	*/
-	/* .si-threads::before {
-		content: url('/assets/icons/suraj-threads-logo.svg');
-		height: 1em;
-		width: 1em;
-		transform: translate(0, 5%);
-	} */
-	
+	.meta-information{
+		margin: -4rem auto 2rem -1rem;
+	}
 	.hint {
 		display: inline-block;
 		font-size: 1.5rem;
@@ -149,9 +114,6 @@
 	}
 	.music-section > li {
 		margin-bottom: -2rem;
-	}
-	abbr {
-		cursor: pointer;
 	}
 	.subtitle {
 		margin-top: -1rem;
