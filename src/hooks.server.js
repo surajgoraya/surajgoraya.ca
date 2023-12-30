@@ -15,7 +15,7 @@ export async function handle({ event, resolve }) {
 	 */
 	BAD_USER_AGENTS.forEach((agent) => {
 		if (USER_AGENT.toLocaleLowerCase().includes(agent.toLocaleLowerCase())) {
-			error(403, 'Forbidden');
+			error(418, 'bruh.');
 		}
 	});
 
