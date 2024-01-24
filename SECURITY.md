@@ -1,6 +1,6 @@
 # Security Policy
 
-You may report vulnerabilities via the policy stated here, or in the `.well-known` security policy here for more information: [https://surajgoraya.ca/.well-known/security.txt](https://surajgoraya.ca/.well-known/security.txt)
+You may report vulnerabilities via the policy stated here, or in the `.well-known` security policy here: [https://surajgoraya.ca/.well-known/security.txt](https://surajgoraya.ca/.well-known/security.txt)
 
 ## Supported Versions
 All versions.
