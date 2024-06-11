@@ -1,2 +1,82 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import CaseStudy from '$lib/components/CaseStudy.svelte';
+	import ResearchSnipit from '$lib/components/ResearchSnipit.svelte';
+	import Container from '$lib/components/core/Container.svelte';
+	import { CASE_STUDIES, RESEARCH } from '$lib/config/frontpage.config';
+</script>
+
+<section id="hello" class="bg-brand-white min-h-[50%] pt-48">
+	<Container class="flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
+		<div class="flex-[0.5]">
+			<h1 class="font-branding font-bold leading-tight text-2xl">hey! <br />i'm suraj, a</h1>
+			<h2 class="font-branding tracking-wide font-light leading-snug text-xl lg:text-4xl">
+				{`computer science graduate student, researching`}
+				<span class=" text-brand-blue">{`design systems`}</span>,
+				<span class=" text-brand-blue">{`human computer interaction`}</span>
+				{`and`} <span class="text-brand-blue">{`UX`}</span>,
+				<span class="text-lg font-"
+					><br />{`(also occasionally coding things and making music)`}</span
+				>
+			</h2>
+		</div>
+		<img
+			src="perma/cover.jpg"
+			alt="s"
+			class="hidden lg:block flex-[0.25] w-1 aspect-square object-cover"
+		/>
+	</Container>
+</section>
+<section id="case-studies">
+	<Container class={'mt-12 pb-12'}>
+		<h1
+			class="font-branding font-black text-brand-dark text-[3rem] -mb-8 -mt-4 lg:mt-8 lg:text-[4rem] lg:-mb-12 opacity-20"
+		>
+			WORK:
+		</h1>
+		{#each CASE_STUDIES as study, i}
+			<CaseStudy
+				title={study.title}
+				description={study.description}
+				skills={study.skills}
+				url={study.url}
+				id={i}
+				image={study.image}
+				locked={study.locked}
+			/>
+		{/each}
+		<div class="w-full min-w-full flex justify-end">
+			<a
+				class="text-2xl font-branding tracking-widest p-2 transition-colors duration-500 hover:bg-brand-blue hover:text-brand-white"
+				href="/work">{`see all work `}<i class="bi bi-arrow-right"></i></a
+			>
+		</div>
+	</Container>
+</section>
+<section id="research" class="bg-brand-dark">
+	<Container class={'mt-12 pb-24'}>
+		<h1
+			class="font-branding font-black text-white text-[3rem] lg:text-[4rem] pt-12 pb-8 opacity-20"
+		>
+			RESEARCH:
+		</h1>
+		<div class="flex flex-col gap-8">
+			{#each RESEARCH as snip, i}
+				<ResearchSnipit
+					title={snip.title}
+					description={snip.description}
+					area={snip.area}
+					type={snip.type}
+					image={snip.image}
+					url={snip.url}
+					ongoing={snip.ongoing}
+				/>
+			{/each}
+		</div>
+		<div class="w-full min-w-full flex justify-end mt-12">
+			<a
+				class="text-2xl font-branding tracking-widest p-2 transition-colors duration-500 text-brand-white hover:bg-brand-blue hover:text-brand-white"
+				href="/work">{`see all research `}<i class="bi bi-arrow-right"></i></a
+			>
+		</div>
+	</Container>
+</section>
