@@ -10,7 +10,9 @@
 	<Container class={'my-4 flex items-center justify-between'}>
 		<div class="flex flex-col lg:flex-row justify-center lg:justify-between h-14 lg:h-20 lg:items-center w-full">
 			<div id="logo-branding">
-				<Logo class={'h-12 lg:h-14'} />
+				<a href="/">
+					<Logo class={'h-12 lg:h-14'} />
+				</a>
 			</div>
 			<ul
 				class="hidden flex-col lg:flex lg:flex-row gap-4 lg:gap-8 lg:items-center font-branding font-bold text-2xl lg:text-xl lg:font-light"

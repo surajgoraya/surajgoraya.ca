@@ -1,5 +1,6 @@
 <script>
-	import CaseStudy from '$lib/components/CaseStudy.svelte';
+	import ButtonLink from '$lib/components/ButtonLink.svelte';
+import CaseStudy from '$lib/components/CaseStudy.svelte';
 	import ResearchSnipit from '$lib/components/ResearchSnipit.svelte';
 	import Container from '$lib/components/core/Container.svelte';
 	import { CASE_STUDIES, RESEARCH } from '$lib/config/frontpage.config';
@@ -26,7 +27,7 @@
 		/>
 	</Container>
 </section>
-<section id="case-studies">
+<section id="work">
 	<Container class={'mt-12 pb-12'}>
 		<h1
 			class="font-branding font-black text-brand-dark text-[3rem] -mb-8 -mt-4 lg:mt-8 lg:text-[4rem] lg:-mb-12 opacity-20"
@@ -44,12 +45,9 @@
 				locked={study.locked}
 			/>
 		{/each}
-		<div class="w-full min-w-full flex justify-end">
-			<a
-				class="text-2xl font-branding tracking-widest p-2 transition-colors duration-500 hover:bg-brand-blue hover:text-brand-white"
-				href="/work">{`see all work `}<i class="bi bi-arrow-right"></i></a
-			>
-		</div>
+		<!-- <div class="w-full min-w-full flex justify-end">
+			<ButtonLink href={'/work'}>see all work</ButtonLink>
+		</div> -->
 	</Container>
 </section>
 <section id="research" class="bg-brand-dark">
@@ -72,11 +70,8 @@
 				/>
 			{/each}
 		</div>
-		<div class="w-full min-w-full flex justify-end mt-12">
-			<a
-				class="text-2xl font-branding tracking-widest p-2 transition-colors duration-500 text-brand-white hover:bg-brand-blue hover:text-brand-white"
-				href="/work">{`see all research `}<i class="bi bi-arrow-right"></i></a
-			>
-		</div>
+		<!-- <div class="w-full min-w-full flex justify-end mt-12">
+			<ButtonLink class={'text-brand-white'} href={'/research'}>see all research</ButtonLink>
+		</div> -->
 	</Container>
 </section>

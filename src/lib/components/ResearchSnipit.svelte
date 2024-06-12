@@ -11,7 +11,7 @@
 	>
 		<div class="flex flex-col flex-grow gap-1">
 			<p class="font-sans font-extralight uppercase text-xs">{type} {` · In progress`}</p>
-			<p class="font-sans font-bold text-lg lg:text-xl">{`██████ ██████ ██ █████`}</p>
+			<p class="font-sans font-bold text-lg lg:text-xl">{`██████ ██████ ██ DESIGN SYSTEMS █████`}</p>
 			<p class="font-sans font-light text-sm lg:text-md">
 				{`██████ ██████ ██████ ██████ ██████ ██ █████`}
 			</p>

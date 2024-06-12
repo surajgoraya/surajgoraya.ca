@@ -5,7 +5,7 @@ const CASE_STUDIES = [
 		description:
 			'Worked on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt sed lorem mattis malesuada. In ut enim tempus, condimentum purus vitae, accumsan dui.',
 		image: '/assets/works/ASSETS2024.jpg',
-		url: '/work/assets-2024/website',
+		url: '/portfolio/assets-2024/website',
 		locked: false
 	},
 	{
@@ -14,8 +14,8 @@ const CASE_STUDIES = [
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt sed lorem mattis malesuada. In ut enim tempus, condimentum purus vitae, accumsan dui.',
 		image: '/assets/works/ASSETS2024.jpg',
-		url: '/work/assets-2024/branding',
-		locked: false
+		url: '/portfolio/assets-2024/branding',
+		locked: true
 	}
 	// {
 	// 	title: 'ASSETS 2024 Branding',
