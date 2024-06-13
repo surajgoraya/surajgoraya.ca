@@ -1,6 +1,6 @@
 {
-	"name": "svelte.surajgoraya.ca",
-	"version": "0.0.1",
+	"name": "surajgoraya.ca",
+	"version": "2.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",

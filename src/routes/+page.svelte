@@ -1,13 +1,19 @@
 <script>
 	import ButtonLink from '$lib/components/ButtonLink.svelte';
-import CaseStudy from '$lib/components/CaseStudy.svelte';
+	import CaseStudy from '$lib/components/CaseStudy.svelte';
 	import ResearchSnipit from '$lib/components/ResearchSnipit.svelte';
+	import Shahi from '$lib/components/branding/Shahi.svelte';
 	import Container from '$lib/components/core/Container.svelte';
 	import { CASE_STUDIES, RESEARCH } from '$lib/config/frontpage.config';
 </script>
 
-<section id="hello" class="bg-brand-white min-h-[50%] pt-48">
-	<Container class="flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
+<section
+	id="hello"
+	class="bg-brand-white lg:min-h-[calc(50%-12rem)] pt-48"
+>
+	<Container
+		class="flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10"
+	>
 		<div class="flex-[0.5]">
 			<h1 class="font-branding font-bold leading-tight text-2xl">hey! <br />i'm suraj, a</h1>
 			<h2 class="font-branding tracking-wide font-light leading-snug text-xl lg:text-4xl">
@@ -25,6 +31,7 @@ import CaseStudy from '$lib/components/CaseStudy.svelte';
 			alt="s"
 			class="hidden lg:block flex-[0.25] w-1 aspect-square object-cover"
 		/>
+		<!-- <Shahi class={'stroke-brand-dark absolute top-0 -translate-y-14 -translate-x-2 z-0 w-20 opacity-5 lg:hidden'}/> -->
 	</Container>
 </section>
 <section id="work">

@@ -16,4 +16,7 @@ const SOCIAL_LINKS = [
 	}
 ];
 
-export { SOCIAL_LINKS };
+
+const PROTECTED_ROUTES = ['/portfolio/assets-2024/website'];
+
+export { PROTECTED_ROUTES, SOCIAL_LINKS };

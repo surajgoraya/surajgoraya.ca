@@ -3,8 +3,11 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
+			animation: {
+				'spin-slow': 'spin 3s linear infinite'
+			},
 			backgroundImage: {
-				'hero': "url('/perma/cover.jpg')",
+				hero: "url('/perma/cover.jpg')"
 			},
 			colors: {
 				'imperial-red': '#F93943',

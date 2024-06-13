@@ -13,7 +13,7 @@ const CASE_STUDIES = [
 		skills: ['Branding'],
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt sed lorem mattis malesuada. In ut enim tempus, condimentum purus vitae, accumsan dui.',
-		image: '/assets/works/ASSETS2024.jpg',
+		image: '/assets/works/ASSETS2024-branding.jpg',
 		url: '/portfolio/assets-2024/branding',
 		locked: true
 	}

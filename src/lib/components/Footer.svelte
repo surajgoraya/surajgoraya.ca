@@ -5,11 +5,11 @@
 	import Container from './core/Container.svelte';
 </script>
 
-<footer class="bg-brand-darker py-24 text-brand-white">
-	<Container class={'flex flex-col lg:flex-row gap-8 justify-between'}>
+<footer class="bg-brand-darker py-24">
+	<Container class={'flex flex-col lg:flex-row gap-8 justify-between text-brand-white'}>
 		<div class="flex flex-col gap-8">
 			<p class="text-2xl font-branding tracking-wide font-bold uppercase text-brand-white">
-				&copy; {new Date().getFullYear()} Suraj Goraya
+				&copy; 2017-{new Date().getFullYear()} Suraj Goraya
 			</p>
 			<Shahi class={'hidden lg:block stroke-brand-white opacity-15 w-[4rem]'} />
 		</div>
