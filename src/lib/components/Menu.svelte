@@ -40,18 +40,25 @@
 			role="button"
 			tabindex="0"
 		>
-			<i class="text-4xl bi bi-list"></i>
+			<i
+				class={` absolute text-4xl bi bi-list transition-all duration-500 ${mmOpen ? 'opacity-0 ' : 'opacity-100'}`}
+			></i>
+			<i
+				class={` text-4xl bi bi-x-lg transition-all duration-500 ${mmOpen ? 'opacity-100' : 'opacity-0 '}`}
+			></i>
 		</div>
 	</Container>
 	<div
 		id="mobile-menu"
-		class:spin-slow={mmOpen === true}
-		class={`lg:hidden absolute z-30 bg-brand-white h-screen w-screen backdrop-filter backdrop-blur-lg bg-opacity-95 ${mmOpen ? 'block' : 'hidden'}`}
+		aria-hidden={!mmOpen}
+		class={`lg:hidden absolute z-30 bg-brand-white h-screen w-screen backdrop-filter backdrop-blur-lg bg-opacity-95 transition-all duration-500 ${mmOpen ? 'z-30 opacity-100' : 'opacity-0 blur-2xl -z-30'}`}
 	>
 		<Container class={'h-[calc(100%-4rem)]'}>
 			<ul class="flex flex-col gap-4 justify-center h-full">
-				{#each MENU_ITEMS as menu_item}
-					<li class="text-5xl">
+				{#each MENU_ITEMS as menu_item, i}
+					<li
+						class={`text-5xl transition-all translate-y-0 duration-1000 ${mmOpen ? `translate-y-[${i}em]` : ``}`}
+					>
 						<a
 							on:click={revealMenu}
 							class="font-branding tracking-widest underline-offset-4 hover:underline hover:text-brand-blue transition duration-300"
