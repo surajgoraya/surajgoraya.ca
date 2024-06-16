@@ -16,7 +16,10 @@ const SOCIAL_LINKS = [
 	}
 ];
 
-
 const PROTECTED_ROUTES = ['/portfolio/assets-2024/website'];
 
-export { PROTECTED_ROUTES, SOCIAL_LINKS };
+const DEFAULTS = {
+	description:
+		'UI/UX designer based in Toronto, doing research on design systems, coding things & making music.'
+};
+export { DEFAULTS, PROTECTED_ROUTES, SOCIAL_LINKS };

@@ -3,6 +3,10 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
+			transitionProperty: {
+				height: 'height',
+				allbutheight: 'filter, opacity'
+			},
 			animation: {
 				'spin-slow': 'spin 3s linear infinite'
 			},

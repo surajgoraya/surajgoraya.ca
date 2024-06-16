@@ -1,16 +1,14 @@
 <script>
-	import ButtonLink from '$lib/components/ButtonLink.svelte';
 	import CaseStudy from '$lib/components/CaseStudy.svelte';
 	import ResearchSnipit from '$lib/components/ResearchSnipit.svelte';
-	import Shahi from '$lib/components/branding/Shahi.svelte';
 	import Container from '$lib/components/core/Container.svelte';
+	import SEO from '$lib/components/core/SEO.svelte';
 	import { CASE_STUDIES, RESEARCH } from '$lib/config/frontpage.config';
+	import { DEFAULTS } from '$lib/config/sitewide.config';
 </script>
 
-<section
-	id="hello"
-	class="bg-brand-white lg:min-h-[calc(50%-12rem)] pt-48"
->
+<SEO title={'home'} description={DEFAULTS.description} />
+<section id="hello" class="bg-brand-white lg:min-h-[calc(50%-12rem)] pt-48">
 	<Container
 		class="flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10"
 	>

@@ -4,6 +4,7 @@
 	import Logo from './branding/Logo.svelte';
 	let mmOpen = false;
 
+	// @ts-ignore
 	function revealMenu(e) {
 		mmOpen = !mmOpen;
 	}
@@ -48,12 +49,17 @@
 			></i>
 		</div>
 	</Container>
+
 	<div
 		id="mobile-menu"
 		aria-hidden={!mmOpen}
-		class={`lg:hidden absolute z-30 bg-brand-white h-screen w-screen backdrop-filter backdrop-blur-lg bg-opacity-95 transition-all duration-500 ${mmOpen ? 'z-30 opacity-100' : 'opacity-0 blur-2xl -z-30'}`}
+		class={`lg:hidden absolute bg-brand-white backdrop-filter h-screen w-screen backdrop-blur-lg bg-opacity-95 transition-allbutheight duration-500 ${
+			mmOpen
+				? 'z-30 opacity-100'
+				: `opacity-0 blur-2xl overflow-hidden !h-0 -translate-y-screen !-z-30`
+		}`}
 	>
-		<Container class={'h-[calc(100%-4rem)]'}>
+		<Container class={`h-[calc(100%-4rem)] ${mmOpen ? 'z-30' : ' overflow-hidden !-z-30'}`}>
 			<ul class="flex flex-col gap-4 justify-center h-full">
 				{#each MENU_ITEMS as menu_item, i}
 					<li

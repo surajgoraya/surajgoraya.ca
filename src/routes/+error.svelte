@@ -3,8 +3,11 @@
 
 	import { page } from '$app/stores';
 	import Container from '$lib/components/core/Container.svelte';
+	import Seo from '$lib/components/core/SEO.svelte';
+	import { DEFAULTS } from '$lib/config/sitewide.config';
 </script>
 
+<Seo title={'error'} description={DEFAULTS.description} />
 <div class=" bg-brand-white">
 	<Container class={'py-56 h-[calc(100vh-22rem)] flex flex-row items-center'}>
 		<div class="flex flex-col gap-2">

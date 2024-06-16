@@ -1,10 +1,14 @@
 <script>
 	import Container from '$lib/components/core/Container.svelte';
+	import Seo from '$lib/components/core/SEO.svelte';
 	import ItemList from '$lib/components/portfolio/ItemList.svelte';
+	import { DEFAULTS } from '$lib/config/sitewide.config';
 </script>
 
+<Seo title={'protected'} description={DEFAULTS.description} />
+
 <div id="header" class="bg-brand-white">
-	<Container class={`pt-28 lg:pb-0`}>
+	<!-- <Container class={`pt-28 lg:pb-0`}>
 		<div class="flex lg:flex-row flex-col-reverse mb-4 gap-8 items-center">
 			<div class="flex-1 flex flex-col gap-2">
 				<h1 class="font-branding lg:text-5xl text-3xl font-bold tracking-wider uppercase">
@@ -50,5 +54,5 @@
 		<div id="content" class="mt-4 mb-4">
 			<p>ASSETS or, the ACM SIGACCESS Conference on Computers and Accessibility is  </p>
 		</div>
-	</Container>
+	</Container> -->
 </div>
