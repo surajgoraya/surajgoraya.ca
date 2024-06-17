@@ -1,8 +1,9 @@
 <script>
 	import { MetaTags } from 'svelte-meta-tags';
 	export let title, description;
-	// export let noIndex = false;
+	export let noIndex = false;
 </script>
+
 <!-- 
 keywords=[
 		'suraj goraya',
@@ -20,6 +21,7 @@ keywords=[
 <MetaTags
 	title={`suraj goraya - ${title}`}
 	description={`${description}`}
+	robots={noIndex ? 'noindex, nofollow' : 'index,follow'}
 	openGraph={{
 		title: `suraj goraya - ${title}`,
 		siteName: 'suraj goraya | UI / UX Designer, Developer',

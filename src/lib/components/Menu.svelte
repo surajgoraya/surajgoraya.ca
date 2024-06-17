@@ -15,7 +15,7 @@
 		<div
 			class="flex flex-col lg:flex-row justify-center lg:justify-between h-14 lg:h-20 lg:items-center w-full"
 		>
-			<div id="logo-branding">
+			<div id="logo-branding" class="w-max">
 				<a href="/">
 					<Logo class={'h-12 lg:h-14'} />
 				</a>

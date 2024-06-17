@@ -11,7 +11,7 @@
 <div class=" bg-brand-white">
 	<Container class={'py-56 h-[calc(100vh-22rem)] flex flex-row items-center'}>
 		<div class="flex flex-col gap-2">
-			<i class="bi bi-heartbreak text-5xl opacity-30"></i>
+			<i class="bi bi-heartbreak-fill text-5xl opacity-30"></i>
 			<h1 class="font-branding font-black text-brand-dark text-[3rem] lg:text-[4rem]">
 				{$page.status}
 			</h1>

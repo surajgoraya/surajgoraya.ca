@@ -25,7 +25,7 @@
 		</div>
 		<p class="text-brand-dark">{description}</p>
 		{#if locked}
-			<div class="mt-4 flex flex-row group relative">
+			<div class="mt-4 flex flex-row group relative w-max">
 				<div
 					class="z-0 -translate-x-2 -translate-y-1 opacity-0 bg-brand-dark h-9 w-1 min-w-1 min-h-9 absolute group-hover:w-[9.25rem] group-hover:opacity-100 transition-all duration-300
 			ease-out"
@@ -37,7 +37,7 @@
 				</p>
 			</div>
 		{:else}
-			<div class="mt-4 flex flex-row group relative">
+			<div class="mt-4 flex flex-row group relative w-max">
 				<div
 					class="z-0 -translate-x-2 -translate-y-1 opacity-0 bg-brand-blue h-9 w-1 min-w-1 min-h-9 absolute group-hover:w-32 group-hover:opacity-100 transition-all duration-300
                 ease-out"

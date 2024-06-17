@@ -8,7 +8,7 @@
 <div class=" bg-brand-white">
 	<Container class={'py-56 h-[calc(100vh-22rem)] flex flex-row items-center'}>
 		<div class="flex flex-col gap-2">
-			<i class="bi bi-balloon-heart text-5xl opacity-30"></i>
+			<i class="bi bi-balloon-heart-fill text-5xl opacity-30"></i>
 			<h1 class="font-branding font-black text-brand-dark text-[3rem] lg:text-[4rem]">
 				{`Protected,`}
 			</h1>
