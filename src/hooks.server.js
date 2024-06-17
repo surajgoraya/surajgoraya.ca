@@ -1,4 +1,4 @@
-import { BAD_USER_AGENTS } from '$lib/config';
+import { BAD_USER_AGENTS } from '$lib/config/sitewide.config';
 import { error, redirect } from '@sveltejs/kit';
 
 /** @type {import('@sveltejs/kit').Handle} */
@@ -14,7 +14,7 @@ export async function handle({ event, resolve }) {
 	 * @see https://stackoverflow.com/questions/57908900/what-is-the-bytespider-user-agent
 	 */
 	BAD_USER_AGENTS.forEach((agent) => {
-		if (USER_AGENT.toLocaleLowerCase().includes(agent.toLocaleLowerCase())) {
+		if (USER_AGENT?.toLocaleLowerCase().includes(agent.toLocaleLowerCase())) {
 			error(418, 'bruh.');
 		}
 	});

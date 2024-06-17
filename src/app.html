@@ -1,35 +1,27 @@
-<!DOCTYPE html>
-<html lang="en-CA">
+<!doctype html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-
-		<!--load bootstrap icons-->
-		<link
-			rel="stylesheet"
-			href="https://static.surajgoraya.ca/css/bootstrap-icons.css"
-		/>
-		<link rel="stylesheet" href="%sveltekit.assets%/css/sakura.css" />
-		<link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css" />
-		<link rel="stylesheet" href="%sveltekit.assets%/css/theme.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="https://use.typekit.net/juv7tgb.css" />
+		<!--load bootstrap icons-->
+		<link rel="stylesheet" href="https://static.surajgoraya.ca/css/bootstrap-icons.css" />
+		%sveltekit.head%
 	</head>
-	<body lang="en-CA">
-		<div id="svelte">%sveltekit.body%</div>
+	<body data-sveltekit-preload-data="hover" class="h-screen p-0">
+		<div style="display: contents" class="h-screen">%sveltekit.body%</div>
 	</body>
+
 	<!-- Google tag (gtag.js) (im sorry)-->
-	<script
-		async
-		src="https://www.googletagmanager.com/gtag/js?id=G-0QTQ57WVMY"
-	></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QTQ57WVMY"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() {
