@@ -3,6 +3,7 @@
 	export let skills;
 	export let url, image;
 	export let locked;
+	export let alt;
 	let className = '';
 	export let id;
 	export { className as class };
@@ -15,7 +16,7 @@
 	id={`case-study-${id ? id : Math.random() * 100}`}
 >
 	<div id="left-panel" class="flex flex-col gap-2 flex-[0.5]">
-		<p class="text-brand-dark text-2xl font-sans font-bold">{title}</p>
+		<h2 class="text-brand-dark text-2xl font-sans font-bold">{title}</h2>
 		<div class="flex gap-2">
 			{#each skills as skill, i}
 				<span class="text-brand-dark opacity-80"
@@ -51,6 +52,6 @@
 		{/if}
 	</div>
 	<div class="flex-[0.5]">
-		<img class="w-full lg:w-3/4 ml-auto" src={image} />
+		<img class="w-full lg:w-3/4 ml-auto" {alt} src={image} />
 	</div>
 </div>

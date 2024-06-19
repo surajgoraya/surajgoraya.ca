@@ -18,18 +18,18 @@
 				{`computer science graduate student, researching`}
 				<span class=" text-brand-blue">{`design systems`}</span>,
 				<span class=" text-brand-blue">{`human computer interaction`}</span>
-				{`and`} <span class="text-brand-blue">{`UX`}</span>,
-				<span class="text-lg font-"
+				{`and`} <span class="text-brand-blue">{`UX!`}</span>
+				<span class="text-lg font-branding"
 					><br />{`(also occasionally coding things and making music)`}</span
 				>
 			</h2>
 		</div>
+		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img
 			src="perma/cover.jpg"
-			alt="s"
+			alt="A black and white photo of Suraj, a turbaned man, with a short beard, standing looking down in a stairwell, surrounded with concrete walls. There appears to be a window just above his head, filled with grass and a bench."
 			class="hidden lg:block flex-[0.25] w-1 aspect-square object-cover"
 		/>
-		<!-- <Shahi class={'stroke-brand-dark absolute top-0 -translate-y-14 -translate-x-2 z-0 w-20 opacity-5 lg:hidden'}/> -->
 	</Container>
 </section>
 <section id="work">
@@ -48,11 +48,9 @@
 				id={i}
 				image={study.image}
 				locked={study.locked}
+				alt={study.alt}
 			/>
 		{/each}
-		<!-- <div class="w-full min-w-full flex justify-end">
-			<ButtonLink href={'/work'}>see all work</ButtonLink>
-		</div> -->
 	</Container>
 </section>
 <section id="research" class="bg-brand-dark">
@@ -70,13 +68,11 @@
 					area={snip.area}
 					type={snip.type}
 					image={snip.image}
+					alt={snip.alt}
 					url={snip.url}
 					ongoing={snip.ongoing}
 				/>
 			{/each}
 		</div>
-		<!-- <div class="w-full min-w-full flex justify-end mt-12">
-			<ButtonLink class={'text-brand-white'} href={'/research'}>see all research</ButtonLink>
-		</div> -->
 	</Container>
 </section>
