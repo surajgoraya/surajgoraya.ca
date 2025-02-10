@@ -11,7 +11,13 @@ i {
 	@apply font-sans;
 }
 
-/* 
-a {
-	@appl
-} */
+.bi-bluesky::before {
+	content: '';
+	background-color: currentColor;
+	-webkit-mask: url('/assets/icons/bluesky.svg') no-repeat 50% 50%;
+	mask: url url('/assets/icons/bluesky.svg') no-repeat 50% 50%;
+	-webkit-mask-size: cover;
+	mask-size: cover;
+	height: 16px;
+	width: 16px;
+}

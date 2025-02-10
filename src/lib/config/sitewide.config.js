@@ -1,4 +1,9 @@
 const SOCIAL_LINKS = [
+	// {
+	// 	site: 'Bluesky',
+	// 	link: 'https://bsky.app/profile/surajgoraya.ca',
+	// 	icon: 'bluesky'
+	// },
 	{
 		site: 'Twitter',
 		link: 'https://twitter.com/surajgoraya',

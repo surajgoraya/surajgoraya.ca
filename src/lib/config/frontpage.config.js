@@ -7,7 +7,7 @@ const CASE_STUDIES = [
 		image: '/assets/works/ASSETS2024.jpg',
 		alt: "A screenshot of the ASSETS 2024 website. On a background of St. John's Newfoundland, there is a semi-translucent black box which says in all capital letters ASSETS 2024.",
 		url: '/portfolio/assets-2024/website',
-		locked: false
+		locked: true
 	},
 	{
 		title: 'ASSETS 2024 Branding',
@@ -19,34 +19,28 @@ const CASE_STUDIES = [
 		url: '/portfolio/assets-2024/branding',
 		locked: true
 	}
-	// {
-	// 	title: 'ASSETS 2024 Branding',
-	// 	skills: ['Branding'],
-	// 	description: '',
-	// 	image: '',
-	// 	url: '',
-	// 	locked: true
-	// }
 ];
 
 const RESEARCH = [
 	{
-		title: 'DESIGN SYSTEMS',
-		type: 'Graduate Thesis',
-		description: '',
+		title: 'Suffering from Success: Defending and Extending Design Systems',
+		type: 'MSc Graduate Thesis · 2024',
+		description: 'On design system weaknesses, critiques and the future of the practice.',
 		area: ['design systems'],
-		image: '',
-		url: '',
-		ongoing: true
+		image: '/assets/research/design-systems.jpg',
+		alt: 'A screen showing various design system components.',
+		url: 'https://hdl.handle.net/10214/28636',
+		ongoing: false
 	},
 	{
-		title: 'AN ANALYSIS INTO DESIGN SYSTEMS, THEIR EVOLUTION AND THEIR USE IN GOVERNMENT',
-		type: 'Undergraduate Thesis',
+		title: 'An Analysis Into Design Systems, Their Evolution and Their Use In Government',
+		type: 'Undergraduate Thesis · 2022',
 		description: 'Analyzing the state of design systems in Canadian e-Government initiatives',
 		area: ['design systems', 'e-government'],
 		image: '/assets/research/ds-and-gov.jpg',
 		alt: 'A silhouette of the Canadian House of Commons and Peace Tower near the river during sunrise,',
-		url: '/research/ds-and-gov',
+		// url: '/research/ds-and-gov',
+		url: 'https://static.surajgoraya.ca/research/GORAYAS-An_Analysis_Into_Design%20Systems_And_Government.pdf',
 		ongoing: false
 	}
 ];

@@ -11,7 +11,8 @@ export default {
 				'spin-slow': 'spin 3s linear infinite'
 			},
 			backgroundImage: {
-				hero: "url('/perma/cover.jpg')"
+				hero: "url('/perma/cover.jpg')",
+				logo: "url('/assets/branding/sg-brand-shahi.svg')"
 			},
 			colors: {
 				'imperial-red': '#F93943',
