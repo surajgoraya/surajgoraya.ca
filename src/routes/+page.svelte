@@ -15,7 +15,7 @@
 		<div class="flex-[0.5]">
 			<h1 class="font-branding font-bold leading-tight text-2xl">hey! <br />i'm suraj, a</h1>
 			<h2 class="font-branding tracking-wide font-light leading-snug text-xl lg:text-4xl">
-				{`computer science graduate student, researching`}
+				{`recent msc computer science graduate, researching`}
 				<span class=" text-brand-blue">{`design systems`}</span>,
 				<span class=" text-brand-blue">{`human computer interaction`}</span>
 				{`and`} <span class="text-brand-blue">{`UX!`}</span>
@@ -24,10 +24,9 @@
 				>
 			</h2>
 		</div>
-		<!-- svelte-ignore a11y-img-redundant-alt -->
 		<img
 			src="perma/cover.jpg"
-			alt="A black and white photo of Suraj, a turbaned man, with a short beard, standing looking down in a stairwell, surrounded with concrete walls. There appears to be a window just above his head, filled with grass and a bench."
+			alt="Suraj, a turbaned man, with a short beard, standing looking down in a stairwell, surrounded with concrete walls. There appears to be a window just above his head, filled with grass and a bench."
 			class="hidden lg:block flex-[0.25] w-1 aspect-square object-cover"
 		/>
 	</Container>
@@ -68,7 +67,7 @@
 					area={snip.area}
 					type={snip.type}
 					image={snip.image}
-					alt={snip.alt}
+					alt={snip.alt ?? ''}
 					url={snip.url}
 					ongoing={snip.ongoing}
 				/>
