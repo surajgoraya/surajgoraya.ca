@@ -1,9 +1,11 @@
-<script>
-	import Footer from '$lib/components/Footer.svelte';
-	import Menu from '$lib/components/Menu.svelte';
-	import '../app.css';
+<script lang="ts">
+	import favicon from '$lib/assets/favicon.svg';
+
+	let { children } = $props();
 </script>
 
-<Menu />
-<slot />
-<Footer />
+<svelte:head>
+	<link rel="icon" href={favicon} />
+</svelte:head>
+
+{@render children?.()}
