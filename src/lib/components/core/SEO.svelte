@@ -4,8 +4,11 @@
 	export let noIndex = false;
 </script>
 
-<!-- 
-keywords=[
+<MetaTags
+	title={`suraj goraya - ${title}`}
+	description={`${description}`}
+	robots={noIndex ? 'noindex, nofollow' : 'index,follow'}
+	keywords={[
 		'suraj goraya',
 		'UI/UX',
 		'ux designer',
@@ -17,11 +20,7 @@ keywords=[
 		'designer toronto',
 		'developer toronto',
 		'music producer'
-	]}, -->
-<MetaTags
-	title={`suraj goraya - ${title}`}
-	description={`${description}`}
-	robots={noIndex ? 'noindex, nofollow' : 'index,follow'}
+	]}
 	openGraph={{
 		title: `suraj goraya - ${title}`,
 		siteName: 'suraj goraya | UI / UX Designer, Developer',
@@ -31,9 +30,9 @@ keywords=[
 		images: [
 			{
 				url: 'https://surajgoraya.ca/perma/cover.jpg',
-				width: 4000,
-				height: 2250,
-				alt: 'A black and white picture of Suraj, standing looking down'
+				width: 2033,
+				height: 1349,
+				alt: 'a front on picture of suraj, a man in a white turban, looking up at the sky with a smile. behind him is the orange glow of the tokyo tower.'
 			}
 		]
 	}}
@@ -42,6 +41,7 @@ keywords=[
 		title: `suraj goraya - ${title}`,
 		description: `${description}`,
 		image: 'https://surajgoraya.ca/perma/cover.jpg',
-		imageAlt: 'A black and white picture of Suraj, standing looking down'
+		imageAlt:
+			'a front on picture of suraj, a man in a white turban, looking up at the sky with a smile. behind him is the orange glow of the tokyo tower.'
 	}}
 />
