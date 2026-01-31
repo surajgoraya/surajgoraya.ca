@@ -5,4 +5,4 @@ import { MENU_ITEMS } from './config/menu.config';
 const components = { Menu };
 const configuration = { MENU_ITEMS };
 
-export { configuration, components};
+export { configuration, components };

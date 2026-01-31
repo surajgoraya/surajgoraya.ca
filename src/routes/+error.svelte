@@ -16,7 +16,7 @@
 			{$page.status}
 		</h1>
 		<p class="text-brand-dark text-2xl font-sans">
-			{$page.error.message ? $page.error.message : 'Something went wrong.'}
+			{$page.error.message ? `${$page.error.message}.` : 'Something went wrong.'}
 		</p>
 	</div>
 </SystemPage>

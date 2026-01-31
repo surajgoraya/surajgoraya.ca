@@ -10,22 +10,22 @@
 <SEO title={'home'} description={DEFAULTS.description} />
 <section id="hello" class="bg-brand-white lg:min-h-[calc(50%-12rem)] pt-48">
 	<Container
-		class="flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10"
+		class={`flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10 data-scroll data-scroll-speed="0.5"`}
 	>
 		<div class="flex-[0.5]">
-			<h1 class="font-branding font-bold leading-tight text-2xl">hey! <br />i'm suraj, a</h1>
+			<h1 class="font-branding font-bold leading-tight text-2xl">hi! <br />i'm suraj, a</h1>
 			<h2 class="font-branding tracking-wide font-light leading-snug text-xl lg:text-4xl">
-				{`recent msc computer science graduate, researching`}
-				<span class=" text-brand-blue">{`design systems`}</span>,
-				<span class=" text-brand-blue">{`human computer interaction`}</span>
-				{`and`} <span class="text-brand-blue">{`UX!`}</span>
-				<span class="text-lg font-branding"
-					><br />{`(also occasionally coding things and making music)`}</span
-				>
+				{`a fullstack developer and designer based in `}<span class=" text-tokyo-tower-orange"
+					>{`toronto`}</span
+				>. {`i specialize in `}
+				<span class=" text-tokyo-tower-orange">{`design systems`}</span>,
+				<span class=" text-tokyo-tower-orange">{`human computer interaction`}</span> and,
+				<span class=" text-tokyo-tower-orange">{`accessibility`}</span>
+				<span class="text-lg font-branding"><br />{`(i also occasionally make music)`}</span>
 			</h2>
 		</div>
 		<img
-			src="perma/cover.jpg"
+			src="assets/img/suraj-main.JPG"
 			alt="Suraj, a turbaned man, with a short beard, standing looking down in a stairwell, surrounded with concrete walls. There appears to be a window just above his head, filled with grass and a bench."
 			class="hidden lg:block flex-[0.25] w-1 aspect-square object-cover"
 		/>
@@ -36,7 +36,7 @@
 		<h1
 			class="font-branding font-black text-brand-dark text-[3rem] -mb-8 -mt-4 lg:mt-8 lg:text-[4rem] lg:-mb-12 opacity-20"
 		>
-			WORK:
+			WORKED ON:
 		</h1>
 		{#each CASE_STUDIES as study, i}
 			<CaseStudy

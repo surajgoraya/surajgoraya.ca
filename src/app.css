@@ -10,7 +10,7 @@ b,
 i {
 	@apply font-sans;
 }
-
+/* 
 .bi-bluesky::before {
 	content: '';
 	background-color: currentColor;
@@ -20,4 +20,4 @@ i {
 	mask-size: cover;
 	height: 16px;
 	width: 16px;
-}
+} */
