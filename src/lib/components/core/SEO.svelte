@@ -25,7 +25,7 @@
 		title: `suraj goraya - ${title}`,
 		siteName: 'suraj goraya | UI / UX Designer, Developer',
 		description: ``,
-		url: 'https://surajgoraya.ca/connect',
+		url: 'https://surajgoraya.ca',
 		type: 'website',
 		images: [
 			{
