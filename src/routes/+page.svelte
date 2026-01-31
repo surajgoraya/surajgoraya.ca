@@ -7,7 +7,7 @@
 	import { DEFAULTS } from '$lib/config/sitewide.config';
 </script>
 
-<SEO title={'home'} description={DEFAULTS.description} />
+<SEO description={DEFAULTS.description} />
 <section id="hello" class="bg-brand-white lg:min-h-[calc(50%-12rem)] pt-48">
 	<Container
 		class={`flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10 data-scroll data-scroll-speed="0.5"`}
