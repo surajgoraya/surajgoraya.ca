@@ -1,6 +1,7 @@
 <script>
 	import { MetaTags } from 'svelte-meta-tags';
-	export let title, description;
+	export let title = '',
+		description = '';
 	export let noIndex = false;
 </script>
 
@@ -22,8 +23,8 @@
 		'music producer'
 	]}
 	openGraph={{
-		title: `suraj goraya - ${title}`,
-		siteName: 'suraj goraya | UI / UX Designer, Developer',
+		title: `suraj goraya${title ? ' - ' : ''}${title}`,
+		siteName: 'suraj goraya | fullstack developer, designer & HCI researcher',
 		description: ``,
 		url: 'https://surajgoraya.ca',
 		type: 'website',

@@ -31,6 +31,6 @@ const BAD_USER_AGENTS = [];
 
 const DEFAULTS = {
 	description:
-		'UI/UX designer based in Toronto, doing research on design systems, coding things & making music.'
+		'Fullstack developer, designer & HCI researcher based in Toronto. Focused on design systems, coding things & making music.'
 };
 export { BAD_USER_AGENTS, DEFAULTS, PROTECTED_ROUTES, SOCIAL_LINKS };
