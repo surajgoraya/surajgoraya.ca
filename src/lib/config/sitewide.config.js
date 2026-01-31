@@ -1,28 +1,33 @@
 const SOCIAL_LINKS = [
-	// {
-	// 	site: 'Bluesky',
-	// 	link: 'https://bsky.app/profile/surajgoraya.ca',
-	// 	icon: 'bluesky'
-	// },
 	{
-		site: 'Twitter',
-		link: 'https://twitter.com/surajgoraya',
-		icon: 'twitter'
+		site: 'github',
+		link: 'https://github.com/surajgoraya',
+		icon: 'github'
 	},
+	{
+		site: 'Bluesky',
+		link: 'https://bsky.app/profile/surajgoraya.ca',
+		icon: 'bluesky'
+	},
+	// {
+	// 	site: 'Twitter',
+	// 	link: 'https://twitter.com/surajgoraya',
+	// 	icon: 'twitter'
+	// },
 	{
 		site: 'Instagram',
 		link: 'https://instagram.com/surajgoraya',
 		icon: 'instagram'
 	},
 	{
-		site: 'Email',
-		link: 'mailto:hello@surajgoraya.ca',
-		icon: 'envelope-heart'
+		site: 'Spotify',
+		link: 'https://open.spotify.com/artist/6FWyVNtwkA0CeTM9I7Q4DI',
+		icon: 'spotify'
 	}
 ];
 
 const PROTECTED_ROUTES = ['/portfolio/assets-2024/website'];
-const BAD_USER_AGENTS = ['ByteSpider', 'GPTBot'];
+const BAD_USER_AGENTS = [];
 
 const DEFAULTS = {
 	description:

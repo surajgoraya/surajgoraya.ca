@@ -26,7 +26,7 @@
 				{#each MENU_ITEMS as menu_item}
 					<li class="lg:text-right">
 						<a
-							class="font-branding tracking-widest underline-offset-4 hover:underline hover:text-brand-blue transition duration-300"
+							class="font-branding tracking-widest underline-offset-4 hover:underline hover:text-tokyo-tower-orange transition duration-300"
 							href={menu_item.link}>{menu_item.name}</a
 						>
 					</li>
@@ -67,7 +67,7 @@
 					>
 						<a
 							on:click={revealMenu}
-							class="font-branding tracking-widest underline-offset-4 hover:underline hover:text-brand-blue transition duration-300"
+							class="font-branding tracking-widest underline-offset-4 hover:underline hover:text-tokyo-tower-orange transition duration-300"
 							href={menu_item.link}>{menu_item.name}</a
 						>
 					</li>

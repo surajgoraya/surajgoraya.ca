@@ -16,6 +16,7 @@ export default {
 			},
 			colors: {
 				'imperial-red': '#F93943',
+				'tokyo-tower-orange': '#D87149',
 				'brand-white': '#F4F2F3',
 				'brand-darker': '#2A272A',
 				'brand-blue': '#058ED9',
@@ -23,6 +24,7 @@ export default {
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
+				punjabi: ['Noto Sans Gurmukhi', 'sans-serif'],
 				serif: ['Merriweather', 'serif'],
 				branding: ['forma-djr-banner', 'sans-serif']
 			}
