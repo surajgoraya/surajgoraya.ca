@@ -23,7 +23,7 @@
 		'music producer'
 	]}
 	openGraph={{
-		title: `suraj goraya${title ? ' - ' : ''}${title}`,
+		title: `suraj goraya${title === '' ? ' - ' : ''}${title}`,
 		siteName: 'suraj goraya | fullstack developer, designer & HCI researcher',
 		description: ``,
 		url: 'https://surajgoraya.ca',
@@ -39,7 +39,7 @@
 	}}
 	twitter={{
 		site: '@surajgoraya',
-		title: `suraj goraya - ${title}`,
+		title: `suraj goraya${title === '' ? ' - ' : ''}${title}`,
 		description: `${description}`,
 		image: 'https://surajgoraya.ca/perma/cover.jpg',
 		imageAlt:
