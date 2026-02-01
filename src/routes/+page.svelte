@@ -13,7 +13,7 @@
 		class={`flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10 data-scroll data-scroll-speed="0.5"`}
 	>
 		<div class="flex-[0.5]">
-			<h1 class="font-branding font-bold leading-tight text-2xl">hi! <br />i'm suraj, a</h1>
+			<h1 class="font-branding font-bold leading-tight text-2xl">hi! <br />i'm suraj,</h1>
 			<h2 class="font-branding tracking-wide font-light leading-snug text-xl lg:text-4xl">
 				{`a fullstack developer and designer based in `}<span class=" text-tokyo-tower-orange"
 					>{`toronto`}</span
@@ -31,9 +31,10 @@
 		/>
 	</Container>
 </section>
-<section id="work">
+<section>
 	<Container class={'mt-12 pb-12'}>
 		<h1
+			id="work"
 			class="font-branding font-black text-brand-dark text-[3rem] -mb-8 -mt-4 lg:mt-8 lg:text-[4rem] lg:-mb-12 opacity-20"
 		>
 			WORKED ON:
@@ -72,6 +73,18 @@
 					ongoing={snip.ongoing}
 				/>
 			{/each}
+			<div class="mt-8 flex flex-row group relative w-max self-end">
+				<div
+					class="z-0 -translate-x-2 -translate-y-1 opacity-0 bg-tokyo-tower-orange h-9 w-1 min-w-1 min-h-9 absolute group-hover:w-[104%] group-hover:opacity-100 transition-all duration-300
+                ease-out"
+				></div>
+				<a
+					href={`https://scholar.google.com/citations?user=2l81oYMAAAAJ&hl=en&ref=surajgoraya.ca`}
+					target="_blank"
+					class=" text-brand-white z-10 flex text-xl font-branding tracking-widest underline-offset-4 group-hover:text-brand-white transition duration-300"
+					>{`see Google Scholar`}&nbsp;<i class="bi bi-arrow-right"></i>&nbsp;</a
+				>
+			</div>
 		</div>
 	</Container>
 </section>

@@ -1,4 +1,5 @@
 <script>
+	import { DEFAULTS } from '$lib/config/sitewide.config';
 	import { MetaTags } from 'svelte-meta-tags';
 	export let title = '',
 		description = '';
@@ -24,8 +25,8 @@
 	]}
 	openGraph={{
 		title: `suraj goraya${title !== '' ? ' - ' : ''}${title}`,
-		siteName: 'suraj goraya | fullstack developer, designer & HCI researcher',
-		description: ``,
+		siteName: 'suraj goraya, a toronto based fullstack developer, designer & HCI researcher',
+		description: DEFAULTS.description,
 		url: 'https://surajgoraya.ca',
 		type: 'website',
 		images: [

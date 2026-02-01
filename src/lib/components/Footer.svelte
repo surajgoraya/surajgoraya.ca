@@ -74,7 +74,7 @@
 					{#each SOCIAL_LINKS as social_link}
 						<a
 							class="font-branding tracking-widest lowercase font-normal hover:text-tokyo-tower-orange hover:underline underline-offset-4 transition-colors duration-300"
-							href={social_link.link}
+							href={`${social_link.link}?ref=surajgoraya.ca`}
 							><span class={`bi bi-${social_link.icon}`}></span>&nbsp;{social_link.site}</a
 						>
 					{/each}

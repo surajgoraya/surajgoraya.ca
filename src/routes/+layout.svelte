@@ -14,10 +14,11 @@
 				lerp: 0.1,
 				duration: 1,
 				orientation: 'vertical',
+				anchors: true,
 				gestureOrientation: 'vertical',
 				smoothWheel: true,
 				wheelMultiplier: 1,
-				touchMultiplier: 2,
+				touchMultiplier: 1,
 				easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) // https://www.desmos.com/calculator/brs54l4xou
 			}
 		});
@@ -25,5 +26,5 @@
 </script>
 
 <Menu />
-<slot id="body" class="data-scroll" />
+<slot id="body" />
 <Footer />
