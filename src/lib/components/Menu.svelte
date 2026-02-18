@@ -10,7 +10,9 @@
 	}
 </script>
 
-<nav class="fixed top-0 w-full z-40 bg-brand-white backdrop-filter backdrop-blur-lg bg-opacity-75">
+<nav
+	class="fixed top-0 w-full z-40 bg-brand-white backdrop-filter backdrop-blur-xl bg-opacity-95 xl:bg-opacity-75"
+>
 	<Container class={'my-4 flex items-center justify-between'}>
 		<div
 			class="flex flex-col lg:flex-row justify-center lg:justify-between h-14 lg:h-20 lg:items-center w-full"

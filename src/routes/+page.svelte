@@ -13,15 +13,25 @@
 		class={`flex pb-24 flex-col gap-2 lg:flex-row lg:justify-between lg:items-center relative z-10 data-scroll data-scroll-speed="0.5"`}
 	>
 		<div class="flex-[0.5]">
-			<h1 class="font-branding font-bold leading-tight text-2xl">hi! <br />i'm suraj,</h1>
+			<h1 class="font-branding font-bold leading-tight text-2xl">hello!</h1>
 			<h2 class="font-branding tracking-wide font-light leading-snug text-xl lg:text-4xl">
-				{`a fullstack developer and designer based in `}<span class=" text-tokyo-tower-orange"
-					>{`toronto`}</span
-				>. {`i specialize in `}
-				<span class=" text-tokyo-tower-orange">{`design systems`}</span>,
-				<span class=" text-tokyo-tower-orange">{`human computer interaction`}</span> and,
-				<span class=" text-tokyo-tower-orange">{`accessibility`}</span>
-				<span class="text-lg font-branding"><br />{`(i also occasionally make music)`}</span>
+				{`my name is suraj, i'm a `}<span class=" text-tokyo-tower-orange"
+					>{`fullstack developer`}</span
+				>{`, `}<span class=" text-tokyo-tower-orange">{`designer`}</span>{` and `}<span
+					class=" text-tokyo-tower-orange"
+					><abbr
+						title="human-computer interaction"
+						class="underline-offset-4 decoration-2 cursor-help">HCI</abbr
+					>{` researcher`}</span
+				>
+				based in toronto.
+				<div class="mt-2">
+					i specialize in
+					<span class=" text-tokyo-tower-orange">{`design systems`}</span>,
+					<span class=" text-tokyo-tower-orange">{`human computer interaction`}</span> and,
+					<span class=" text-tokyo-tower-orange">{`accessibility`}</span>
+					<span class="text-lg font-branding"><br />{`(i also occasionally make music)`}</span>
+				</div>
 			</h2>
 		</div>
 		<img
