@@ -1,41 +1,38 @@
 {
-  "name": "surajgoraya.ca",
-  "version": "2.0.2",
-  "private": true,
-  "scripts": {
-    "dev": "vite dev",
-    "build": "wrangler types --check && vite build",
-    "preview": "pnpm run build && wrangler dev",
-    "check": "wrangler types --check && svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-    "lint": "prettier --check .",
-    "format": "prettier --write .",
-    "gen": "wrangler types",
-    "deploy": "pnpm run build && wrangler deploy"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-cloudflare": "^7.2.8",
-    "@sveltejs/kit": "^2.70.3",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
-    "autoprefixer": "^10.5.4",
-    "mdsvex": "^0.11.2",
-    "postcss": "^8.5.26",
-    "prettier": "^3.9.6",
-    "prettier-plugin-svelte": "^3.5.2",
-    "svelte": "^5.56.10",
-    "svelte-check": "^3.8.6",
-    "svelte-meta-tags": "^4.7.0",
-    "svelte-seo": "^1.7.1",
-    "tailwindcss": "^3.4.19",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.6",
-    "wrangler": "^4.97.0"
-  },
-  "overrides": {
-    "cookie": "^0.7.0"
-  },
-  "type": "module",
-  "dependencies": {
-    "locomotive-scroll": "^5.0.1"
-  }
+	"name": "surajgoraya.ca",
+	"version": "2.0.2",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"autoprefixer": "^10.5.4",
+		"mdsvex": "^0.11.2",
+		"postcss": "^8.5.26",
+		"prettier": "^3.9.6",
+		"prettier-plugin-svelte": "^3.5.2",
+		"svelte": "^5.56.10",
+		"svelte-check": "^3.8.6",
+		"svelte-meta-tags": "^4.7.0",
+		"svelte-seo": "^1.7.1",
+		"tailwindcss": "^3.4.19",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.6"
+	},
+	"overrides": {
+		"cookie": "^0.7.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"locomotive-scroll": "^5.0.1"
+	}
 }
